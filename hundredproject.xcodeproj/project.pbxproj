@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */; };
+		FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42C2C48F38E00F8220D /* SlipperCard.swift */; };
 		FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */; };
 		FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC22C3CE7B40046D846 /* ContentView.swift */; };
 		FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC42C3CE7B40046D846 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAndBlur.swift; sourceTree = "<group>"; };
+		FA77D42C2C48F38E00F8220D /* SlipperCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipperCard.swift; sourceTree = "<group>"; };
 		FAC02CBD2C3CE7B30046D846 /* hundredproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hundredproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hundredprojectApp.swift; sourceTree = "<group>"; };
 		FAC02CC22C3CE7B40046D846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */,
+				FA77D42C2C48F38E00F8220D /* SlipperCard.swift */,
 			);
 			path = TransitionAndBlur;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				FAC02CD42C3CEB820046D846 /* ContentViewButtonStyle.swift in Sources */,
 				FAC02CCF2C3CE86C0046D846 /* ContentViewData.swift in Sources */,
 				FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */,
+				FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */,
 				FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */,
 				FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */,
 			);
