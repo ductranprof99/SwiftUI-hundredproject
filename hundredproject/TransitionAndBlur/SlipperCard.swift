@@ -1,13 +1,21 @@
 import SwiftUI
 
 struct SlipperCard: View {
+    
+    @State var zoom = false
+    
     var body: some View {
         Grid {
-            row
+            if zoom {
+                row
+                
+                Divider()
+                
+                row
+            } else {
+                getCard("Big content")
+            }
             
-            Divider()
-            
-            row
         }
         .padding() // Add padding inside the card
         .background(
@@ -21,6 +29,7 @@ struct SlipperCard: View {
                 .stroke(Color.white, lineWidth: 2)
         )
         .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
+        .animation(.snappy, value: 10)
     }
     
     var row: some View {
@@ -42,7 +51,14 @@ struct SlipperCard: View {
                 Text(cardContent)
                 Image(systemName: "circle")
             }
-        }.padding(.zero)
+        }
+        .padding(.zero)
+        .onTapGesture {
+            withAnimation {
+                self.zoom.toggle()
+                print("Toggle")
+            }
+        }
     }
 }
 
