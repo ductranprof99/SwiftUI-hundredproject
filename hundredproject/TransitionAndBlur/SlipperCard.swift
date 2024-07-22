@@ -4,6 +4,8 @@ struct SlipperCard: View {
     
     @State var zoom = false
     
+    @Binding var isAllowClick: Bool
+    
     var body: some View {
         Grid {
             if zoom {
@@ -55,15 +57,18 @@ struct SlipperCard: View {
         .padding(.zero)
         .onTapGesture {
             withAnimation {
-                self.zoom.toggle()
-                print("Toggle")
+                if isAllowClick {
+                    self.zoom.toggle()
+                    print("Toggle")
+                }
             }
         }
     }
 }
 
 struct SlipperCard_Previews: PreviewProvider {
+    @State static var isAllowClick = true
     static var previews: some View {
-        SlipperCard()
+        SlipperCard(isAllowClick: $isAllowClick)
     }
 }
