@@ -25,7 +25,7 @@ struct TransitionAndBlur: View {
                 .blur(radius: show ? 0 : 30)
                 .opacity(self.show ? 0.9 : 0.3)
                 .shadow(radius: 10)
-                .animation(.spring, value: 30)
+                .animation(.spring, value: 1)
             
             Button(action: {
                 withAnimation {

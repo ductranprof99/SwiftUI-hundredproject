@@ -12,6 +12,7 @@ struct ContentView: View {
     
     let listView: [ContentViewData] = [
         .transitionAndBlur,
+        .combineView,
         .dummy,
     ]
     
@@ -20,7 +21,7 @@ struct ContentView: View {
             List {
                 ForEach(self.listView) { view in
                     NavigationLink {
-                        getChildNavigationView(view)
+                        view.childNavigationView
                     } label: {
                         HStack(alignment: .center) {
                             Spacer()
@@ -39,15 +40,6 @@ struct ContentView: View {
             .navigationTitle("Navigation")
         }
         
-    }
-    
-    func getChildNavigationView(_ viewData: ContentViewData) -> some View {
-        switch viewData {
-        case .transitionAndBlur:
-            return TransitionAndBlur()
-        case .dummy:
-            return TransitionAndBlur()
-        }
     }
 }
 

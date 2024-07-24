@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */; };
 		FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42C2C48F38E00F8220D /* SlipperCard.swift */; };
+		FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */; };
 		FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */; };
 		FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC22C3CE7B40046D846 /* ContentView.swift */; };
 		FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC42C3CE7B40046D846 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAndBlur.swift; sourceTree = "<group>"; };
 		FA77D42C2C48F38E00F8220D /* SlipperCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipperCard.swift; sourceTree = "<group>"; };
+		FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewPage.swift; sourceTree = "<group>"; };
 		FAC02CBD2C3CE7B30046D846 /* hundredproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hundredproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hundredprojectApp.swift; sourceTree = "<group>"; };
 		FAC02CC22C3CE7B40046D846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA7C07972C4E40B0004C7638 /* CombineView */ = {
+			isa = PBXGroup;
+			children = (
+				FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */,
+			);
+			path = CombineView;
+			sourceTree = "<group>";
+		};
 		FAC02CB42C3CE7B30046D846 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		FAC02CBF2C3CE7B30046D846 /* hundredproject */ = {
 			isa = PBXGroup;
 			children = (
+				FA7C07972C4E40B0004C7638 /* CombineView */,
 				FAC02CD02C3CE9250046D846 /* TransitionAndBlur */,
 				FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */,
 				FAC02CC22C3CE7B40046D846 /* ContentView.swift */,
@@ -162,6 +173,7 @@
 				FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */,
 				FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */,
 				FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */,
+				FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */,
 				FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
