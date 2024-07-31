@@ -35,6 +35,7 @@ struct CombineViewPage: View {
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 .shadow(radius: 10)
+            
                 .offset(x: 0, y: -100)
                 .padding(.bottom, -100)
 
