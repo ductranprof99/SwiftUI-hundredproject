@@ -50,6 +50,8 @@ struct CombineViewPage: View {
             }
             .padding()
             Spacer()
+        }.onAppear {
+            FirebaseEventLogging.shared.logging("display", parameters: ContentViewData.combineView.eventParam)
         }
     }
 }

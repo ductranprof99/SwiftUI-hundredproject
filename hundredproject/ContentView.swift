@@ -34,6 +34,9 @@ struct ContentView: View {
                         .frame(height: 40, alignment: .center)
                         .overlay(RoundedRectangle(cornerRadius: 20).stroke(style: StrokeStyle(lineWidth: 2, dash: [1.0])))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .onTapGesture {
+                            FirebaseEventLogging.shared.logging("click", parameters: ["touch": "Tap View inside"])
+                        }
                     }
                 }
             }

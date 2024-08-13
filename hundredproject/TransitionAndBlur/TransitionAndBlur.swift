@@ -38,6 +38,8 @@ struct TransitionAndBlur: View {
                     Text("Show")
                 }
             }
+        }.onAppear {
+            FirebaseEventLogging.shared.logging("display", parameters: ContentViewData.transitionAndBlur.eventParam)
         }
     }
 }
