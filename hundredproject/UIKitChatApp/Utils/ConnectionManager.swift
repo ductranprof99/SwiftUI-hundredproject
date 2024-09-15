@@ -10,24 +10,24 @@ import SocketIO
 
 
 protocol ChatNetworkManagerDelegate {
-    func onConnect(message: String) -> Void
-    func onReceiveMessage(message: String) -> Void
-    func onDisconnect(message: String) -> Void
-    func onTyping(message: String) -> Void
+    func onConnect(username: String) -> Void
+    func onReceiveMessage(username: String, message: String) -> Void
+    func onDisconnect(username: String) -> Void
+    func onTyping(username: String) -> Void
     func onNotTyping() -> Void
 }
 
 extension ChatNetworkManagerDelegate {
-    func onConnect(message: String) {
+    func onConnect(username: String) {
         
     }
-    func onReceiveMessage(message: String) {
+    func onReceiveMessage(username: String, message: String) {
         
     }
-    func onDisconnect(message: String) {
+    func onDisconnect(username: String) {
         
     }
-    func onTyping(message: String) {
+    func onTyping(username: String) {
         
     }
     func onNotTyping() {

@@ -44,16 +44,13 @@ final class ChatSocketIOConnection {
     
     func listen(
         onConnect: @escaping (String) -> Void,
-        onReceiveMessage: @escaping (String) -> Void,
+        onReceiveMessage: @escaping (String, String) -> Void,
         onDisconnect: @escaping (String) -> Void,
         onTyping: @escaping (String) -> Void,
         onNotTyping: @escaping () -> Void
     ) {
         socket.on(clientEvent: .connect) { [weak self] data, ack in
             guard let self = self, let room = self.room else { return }
-            
-            // Explicitly join the room after connection
-            self.socket.emit("message", room)
             onConnect("Connected to server and joined room: \(room)")
         }
         
@@ -63,8 +60,7 @@ final class ChatSocketIOConnection {
                   let message = messageData["message"] as? String else {
                 return
             }
-            let formattedMessage = "\(name): \(message)"
-            onReceiveMessage(formattedMessage)
+            onReceiveMessage(name, message)
         }
         
         socket.on(clientEvent: .disconnect) { data, ack in

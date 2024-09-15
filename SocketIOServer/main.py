@@ -65,7 +65,6 @@ def message(data):
     room = session.get("room")
     if room not in rooms:
         return 
-    
     content = {
         "name": session.get("name"),
         "message": data["data"]

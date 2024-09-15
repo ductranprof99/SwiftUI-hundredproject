@@ -57,6 +57,8 @@
 		FAFF2C392C96DFDF003EE3B3 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = FAFF2C382C96DFDF003EE3B3 /* SocketIO */; };
 		FAFF2C3B2C96F41E003EE3B3 /* SocketConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */; };
 		FAFF2C3D2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */; };
+		FAFF2C412C975995003EE3B3 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAFF2C402C975995003EE3B3 /* MessageKit */; };
+		FAFF2C432C975DA6003EE3B3 /* ChatMessageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C422C975DA6003EE3B3 /* ChatMessageModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,7 @@
 		FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnector.swift; sourceTree = "<group>"; };
 		FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitChatSaveInfo.swift; sourceTree = "<group>"; };
 		FAFF2C3E2C973516003EE3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAFF2C422C975DA6003EE3B3 /* ChatMessageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 				FA28C18E2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				FA28C1B42C68BBE5000464A1 /* FirebaseStorage in Frameworks */,
 				FA28C1A42C68BBE5000464A1 /* FirebaseFunctions in Frameworks */,
+				FAFF2C412C975995003EE3B3 /* MessageKit in Frameworks */,
 				FA28C1AA2C68BBE5000464A1 /* FirebaseInstallations in Frameworks */,
 				FA28C1A22C68BBE5000464A1 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				FA28C1B02C68BBE5000464A1 /* FirebasePerformance in Frameworks */,
@@ -291,6 +295,7 @@
 				FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */,
 				FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */,
 				FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */,
+				FAFF2C422C975DA6003EE3B3 /* ChatMessageModels.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				FA28C1B52C68BBE5000464A1 /* FirebaseStorageCombine-Community */,
 				FA28C1B72C68BBE6000464A1 /* FirebaseVertexAI-Preview */,
 				FAFF2C382C96DFDF003EE3B3 /* SocketIO */,
+				FAFF2C402C975995003EE3B3 /* MessageKit */,
 			);
 			productName = hundredproject;
 			productReference = FAC02CBD2C3CE7B30046D846 /* hundredproject.app */;
@@ -368,6 +374,7 @@
 			packageReferences = (
 				FA28C1892C68B929000464A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				FAFF2C372C96DFDF003EE3B3 /* XCRemoteSwiftPackageReference "socket" */,
+				FAFF2C3F2C975995003EE3B3 /* XCRemoteSwiftPackageReference "MessageKit" */,
 			);
 			productRefGroup = FAC02CBE2C3CE7B30046D846 /* Products */;
 			projectDirPath = "";
@@ -403,6 +410,7 @@
 				FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */,
 				FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */,
 				FAFF2C3B2C96F41E003EE3B3 /* SocketConnector.swift in Sources */,
+				FAFF2C432C975DA6003EE3B3 /* ChatMessageModels.swift in Sources */,
 				FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */,
 				FAFF2C2A2C96D386003EE3B3 /* ConnectionManager.swift in Sources */,
 				FA0651532C7C6EE2009F63F4 /* Renderer.swift in Sources */,
@@ -644,6 +652,14 @@
 				kind = branch;
 			};
 		};
+		FAFF2C3F2C975995003EE3B3 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -766,6 +782,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FAFF2C372C96DFDF003EE3B3 /* XCRemoteSwiftPackageReference "socket" */;
 			productName = SocketIO;
+		};
+		FAFF2C402C975995003EE3B3 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAFF2C3F2C975995003EE3B3 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
