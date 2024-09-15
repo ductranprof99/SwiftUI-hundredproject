@@ -15,8 +15,8 @@ struct TransitionAndBlur: View {
             Text("Transition and blur")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundStyle(TintShapeStyle())
-                .tint(.red)
+//                .foregroundStyle(TintShapeStyle())
+//                .tint(.red)
             
             SlipperCard(isAllowClick: $show)
                 .frame(width: show ? 400 : 300,

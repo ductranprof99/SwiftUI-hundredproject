@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatAppViewController" customModule="hundredproject" customModuleProvider="target">
+            <connections>
+                <outlet property="chatRoomInput" destination="vEa-1K-odJ" id="A6F-Xi-Cdm"/>
+                <outlet property="checkServerButton" destination="chs-yh-7OM" id="CSc-SB-4ee"/>
+                <outlet property="nameTextInput" destination="sNb-65-b9f" id="ZiA-dy-Zy7"/>
+                <outlet property="serverHost" destination="bDK-eL-ndv" id="Inj-kC-EG7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNb-65-b9f">
+                    <rect key="frame" x="96.666666666666686" y="350" width="200" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="LmE-I2-DMI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEa-1K-odJ">
+                    <rect key="frame" x="96.666666666666686" y="460" width="200" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="srd-jg-l42"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQH-gr-vr6">
+                    <rect key="frame" x="104" y="534" width="185" height="39"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Tham gia phòng chat"/>
+                    <connections>
+                        <action selector="handleJoinRoom:" destination="-1" eventType="touchUpInside" id="nNG-QY-ePN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEx-Cw-HRs">
+                    <rect key="frame" x="125.66666666666669" y="603" width="142" height="39"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Tạo phòng chat"/>
+                    <connections>
+                        <action selector="handleCreateRoom:" destination="-1" eventType="touchUpInside" id="ngo-UU-Q1Y"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên người dùng của bạn là" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da0-Ah-HJr">
+                    <rect key="frame" x="96.666666666666686" y="314" width="200" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDK-eL-ndv">
+                    <rect key="frame" x="96.666666666666686" y="145" width="200" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="DYR-52-gOU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server host" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhW-PU-RUZ">
+                    <rect key="frame" x="152.66666666666666" y="109" width="88" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLE-Np-73Y">
+                    <rect key="frame" x="156.66666666666666" y="424" width="80" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chs-yh-7OM">
+                    <rect key="frame" x="134" y="194" width="125" height="39"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Check server"/>
+                    <connections>
+                        <action selector="handleCheckServer:" destination="-1" eventType="touchUpInside" id="7cL-jh-Sxh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="chs-yh-7OM" firstAttribute="top" secondItem="bDK-eL-ndv" secondAttribute="bottom" constant="15" id="0Wn-XC-7RW"/>
+                <constraint firstItem="chs-yh-7OM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3CW-Sj-bkP"/>
+                <constraint firstItem="bDK-eL-ndv" firstAttribute="top" secondItem="fhW-PU-RUZ" secondAttribute="bottom" constant="15" id="4Di-1E-Hvo"/>
+                <constraint firstItem="bDK-eL-ndv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="881-Zs-w9N"/>
+                <constraint firstItem="fhW-PU-RUZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="8WW-nD-eQl"/>
+                <constraint firstItem="yEx-Cw-HRs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dfs-Ml-ha6"/>
+                <constraint firstItem="lQH-gr-vr6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IaA-Ks-pXj"/>
+                <constraint firstItem="BLE-Np-73Y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MIh-Rv-Dr4"/>
+                <constraint firstItem="sNb-65-b9f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SP3-mz-9Zj"/>
+                <constraint firstItem="da0-Ah-HJr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XX1-Fz-EOk"/>
+                <constraint firstItem="sNb-65-b9f" firstAttribute="top" secondItem="da0-Ah-HJr" secondAttribute="bottom" constant="15" id="aFz-Nl-j0k"/>
+                <constraint firstItem="lQH-gr-vr6" firstAttribute="top" secondItem="vEa-1K-odJ" secondAttribute="bottom" constant="40" id="igm-E4-E0w"/>
+                <constraint firstItem="BLE-Np-73Y" firstAttribute="top" secondItem="sNb-65-b9f" secondAttribute="bottom" constant="40" id="jUE-QP-JQS"/>
+                <constraint firstItem="sNb-65-b9f" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-59" id="jps-A4-7a3"/>
+                <constraint firstItem="vEa-1K-odJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k5O-Fk-Bfe"/>
+                <constraint firstItem="yEx-Cw-HRs" firstAttribute="top" secondItem="lQH-gr-vr6" secondAttribute="bottom" constant="30" id="kas-Iw-RQj"/>
+                <constraint firstItem="fhW-PU-RUZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nKu-Xq-3cy"/>
+                <constraint firstItem="vEa-1K-odJ" firstAttribute="top" secondItem="BLE-Np-73Y" secondAttribute="bottom" constant="15" id="sFm-TX-2fl"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

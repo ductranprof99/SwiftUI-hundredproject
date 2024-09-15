@@ -13,6 +13,8 @@ extension CLLocationCoordinate2D {
                                              longitude: 106.5539966)
 }
 
+
+@available(iOS 17.0, *)
 struct CombineViewPage: View {
     static let rect = MKMapRect(
         origin: MKMapPoint(CLLocationCoordinate2D.hcmc),
@@ -58,5 +60,9 @@ struct CombineViewPage: View {
 
 
 #Preview {
-    CombineViewPage()
+    if #available(iOS 17.0, *) {
+        CombineViewPage()
+    } else {
+        EmptyView()
+    }
 }

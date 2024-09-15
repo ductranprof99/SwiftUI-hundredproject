@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */; };
+		FA0651532C7C6EE2009F63F4 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0651522C7C6EE2009F63F4 /* Renderer.swift */; };
 		FA28C1872C68B859000464A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA28C1862C68B859000464A1 /* GoogleService-Info.plist */; };
 		FA28C18C2C68BBE5000464A1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18B2C68BBE5000464A1 /* FirebaseAnalytics */; };
 		FA28C18E2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18D2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -44,9 +46,22 @@
 		FAD649592C5E31390025775F /* GameMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD649582C5E31390025775F /* GameMainView.swift */; };
 		FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD6495B2C5E35A20025775F /* Matrix.swift */; };
 		FAD6495E2C5E35B90025775F /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD6495D2C5E35B90025775F /* GameManager.swift */; };
+		FAFF2C232C968445003EE3B3 /* UIKitChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C222C968445003EE3B3 /* UIKitChatApp.swift */; };
+		FAFF2C262C968935003EE3B3 /* ChatAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2C252C968935003EE3B3 /* ChatAppViewController.xib */; };
+		FAFF2C272C968935003EE3B3 /* ChatAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C242C968935003EE3B3 /* ChatAppViewController.swift */; };
+		FAFF2C2A2C96D386003EE3B3 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C292C96D386003EE3B3 /* ConnectionManager.swift */; };
+		FAFF2C2F2C96D4FB003EE3B3 /* ChatDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2C2E2C96D4FB003EE3B3 /* ChatDetailViewController.xib */; };
+		FAFF2C302C96D4FB003EE3B3 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C2D2C96D4FB003EE3B3 /* ChatDetailViewController.swift */; };
+		FAFF2C342C96D7A8003EE3B3 /* ChatDetailViewHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C332C96D7A8003EE3B3 /* ChatDetailViewHost.swift */; };
+		FAFF2C362C96DB04003EE3B3 /* UIKitViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */; };
+		FAFF2C392C96DFDF003EE3B3 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = FAFF2C382C96DFDF003EE3B3 /* SocketIO */; };
+		FAFF2C3B2C96F41E003EE3B3 /* SocketConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */; };
+		FAFF2C3D2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLesson1.swift; sourceTree = "<group>"; };
+		FA0651522C7C6EE2009F63F4 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		FA28C1862C68B859000464A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA28C1BA2C68C105000464A1 /* FirebaseLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLog.swift; sourceTree = "<group>"; };
 		FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAndBlur.swift; sourceTree = "<group>"; };
@@ -62,6 +77,16 @@
 		FAD649582C5E31390025775F /* GameMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMainView.swift; sourceTree = "<group>"; };
 		FAD6495B2C5E35A20025775F /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		FAD6495D2C5E35B90025775F /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		FAFF2C222C968445003EE3B3 /* UIKitChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitChatApp.swift; sourceTree = "<group>"; };
+		FAFF2C242C968935003EE3B3 /* ChatAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppViewController.swift; sourceTree = "<group>"; };
+		FAFF2C252C968935003EE3B3 /* ChatAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatAppViewController.xib; sourceTree = "<group>"; };
+		FAFF2C292C96D386003EE3B3 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		FAFF2C2D2C96D4FB003EE3B3 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		FAFF2C2E2C96D4FB003EE3B3 /* ChatDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatDetailViewController.xib; sourceTree = "<group>"; };
+		FAFF2C332C96D7A8003EE3B3 /* ChatDetailViewHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewHost.swift; sourceTree = "<group>"; };
+		FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewWrapper.swift; sourceTree = "<group>"; };
+		FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnector.swift; sourceTree = "<group>"; };
+		FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitChatSaveInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +111,7 @@
 				FA28C1AA2C68BBE5000464A1 /* FirebaseInstallations in Frameworks */,
 				FA28C1A22C68BBE5000464A1 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				FA28C1B02C68BBE5000464A1 /* FirebasePerformance in Frameworks */,
+				FAFF2C392C96DFDF003EE3B3 /* SocketIO in Frameworks */,
 				FA28C1A02C68BBE5000464A1 /* FirebaseFirestore in Frameworks */,
 				FA28C1AE2C68BBE5000464A1 /* FirebaseMLModelDownloader in Frameworks */,
 				FA28C19E2C68BBE5000464A1 /* FirebaseDynamicLinks in Frameworks */,
@@ -98,6 +124,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA06514E2C7C689F009F63F4 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				FA06514F2C7C68AB009F63F4 /* Lesson1 */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		FA06514F2C7C68AB009F63F4 /* Lesson1 */ = {
+			isa = PBXGroup;
+			children = (
+				FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */,
+				FA0651522C7C6EE2009F63F4 /* Renderer.swift */,
+			);
+			path = Lesson1;
+			sourceTree = "<group>";
+		};
 		FA28C1882C68B865000464A1 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +203,9 @@
 		FAC02CBF2C3CE7B30046D846 /* hundredproject */ = {
 			isa = PBXGroup;
 			children = (
+				FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp(Next) */,
+				FAFF2C202C96841B003EE3B3 /* UIKitChatApp */,
+				FA06514E2C7C689F009F63F4 /* Metal */,
 				FAC002ED2C5A413500946887 /* 2048 */,
 				FA7C07972C4E40B0004C7638 /* CombineView */,
 				FAC02CD02C3CE9250046D846 /* TransitionAndBlur */,
@@ -197,6 +243,54 @@
 				FAD6495D2C5E35B90025775F /* GameManager.swift */,
 			);
 			path = GameLogic;
+			sourceTree = "<group>";
+		};
+		FAFF2C202C96841B003EE3B3 /* UIKitChatApp */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2C322C96D787003EE3B3 /* Utils */,
+				FAFF2C312C96D76C003EE3B3 /* ChatDetail */,
+				FAFF2C282C96893B003EE3B3 /* FormEntry */,
+			);
+			path = UIKitChatApp;
+			sourceTree = "<group>";
+		};
+		FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp(Next) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SwiftUIChatApp(Next)";
+			sourceTree = "<group>";
+		};
+		FAFF2C282C96893B003EE3B3 /* FormEntry */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2C222C968445003EE3B3 /* UIKitChatApp.swift */,
+				FAFF2C242C968935003EE3B3 /* ChatAppViewController.swift */,
+				FAFF2C252C968935003EE3B3 /* ChatAppViewController.xib */,
+			);
+			path = FormEntry;
+			sourceTree = "<group>";
+		};
+		FAFF2C312C96D76C003EE3B3 /* ChatDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2C2D2C96D4FB003EE3B3 /* ChatDetailViewController.swift */,
+				FAFF2C2E2C96D4FB003EE3B3 /* ChatDetailViewController.xib */,
+				FAFF2C332C96D7A8003EE3B3 /* ChatDetailViewHost.swift */,
+			);
+			path = ChatDetail;
+			sourceTree = "<group>";
+		};
+		FAFF2C322C96D787003EE3B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAFF2C292C96D386003EE3B3 /* ConnectionManager.swift */,
+				FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */,
+				FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */,
+				FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +333,7 @@
 				FA28C1B32C68BBE5000464A1 /* FirebaseStorage */,
 				FA28C1B52C68BBE5000464A1 /* FirebaseStorageCombine-Community */,
 				FA28C1B72C68BBE6000464A1 /* FirebaseVertexAI-Preview */,
+				FAFF2C382C96DFDF003EE3B3 /* SocketIO */,
 			);
 			productName = hundredproject;
 			productReference = FAC02CBD2C3CE7B30046D846 /* hundredproject.app */;
@@ -270,6 +365,7 @@
 			mainGroup = FAC02CB42C3CE7B30046D846;
 			packageReferences = (
 				FA28C1892C68B929000464A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FAFF2C372C96DFDF003EE3B3 /* XCRemoteSwiftPackageReference "socket" */,
 			);
 			productRefGroup = FAC02CBE2C3CE7B30046D846 /* Products */;
 			projectDirPath = "";
@@ -285,8 +381,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFF2C2F2C96D4FB003EE3B3 /* ChatDetailViewController.xib in Resources */,
 				FAC02CC82C3CE7B40046D846 /* Preview Assets.xcassets in Resources */,
 				FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */,
+				FAFF2C262C968935003EE3B3 /* ChatAppViewController.xib in Resources */,
 				FA28C1872C68B859000464A1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,11 +400,21 @@
 				FAC02CCF2C3CE86C0046D846 /* ContentViewData.swift in Sources */,
 				FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */,
 				FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */,
+				FAFF2C3B2C96F41E003EE3B3 /* SocketConnector.swift in Sources */,
 				FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */,
+				FAFF2C2A2C96D386003EE3B3 /* ConnectionManager.swift in Sources */,
+				FA0651532C7C6EE2009F63F4 /* Renderer.swift in Sources */,
+				FAFF2C272C968935003EE3B3 /* ChatAppViewController.swift in Sources */,
+				FAFF2C362C96DB04003EE3B3 /* UIKitViewWrapper.swift in Sources */,
 				FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */,
 				FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */,
+				FAFF2C3D2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift in Sources */,
+				FAFF2C232C968445003EE3B3 /* UIKitChatApp.swift in Sources */,
 				FA28C1BB2C68C105000464A1 /* FirebaseLog.swift in Sources */,
 				FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */,
+				FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */,
+				FAFF2C302C96D4FB003EE3B3 /* ChatDetailViewController.swift in Sources */,
+				FAFF2C342C96D7A8003EE3B3 /* ChatDetailViewHost.swift in Sources */,
 				FAD649592C5E31390025775F /* GameMainView.swift in Sources */,
 				FAD6495E2C5E35B90025775F /* GameManager.swift in Sources */,
 			);
@@ -367,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -424,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -522,6 +630,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 11.0.0;
+			};
+		};
+		FAFF2C372C96DFDF003EE3B3 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -641,6 +757,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA28C1892C68B929000464A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseVertexAI-Preview";
+		};
+		FAFF2C382C96DFDF003EE3B3 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAFF2C372C96DFDF003EE3B3 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

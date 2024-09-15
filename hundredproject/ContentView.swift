@@ -13,7 +13,8 @@ struct ContentView: View {
     let listView: [ContentViewData] = [
         .transitionAndBlur,
         .combineView,
-        .dummy,
+        .metalLevel1,
+        .chatUIKit
     ]
     
     var body: some View {
