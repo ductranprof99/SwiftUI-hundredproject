@@ -12,21 +12,18 @@ final class ChatDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ChatNetworkManager.instance.delegate = self
-        ChatNetworkManager.instance.connect()
+        ChatNetworkManager.instance.connect(
+            room: UIKitChatSaveInfo.instance.chatRoom,
+            name: UIKitChatSaveInfo.instance.username
+        )
         
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func test(_ sender: Any) {
+        ChatNetworkManager.instance.sendMessage(message: "asdfsdf")
     }
-    */
-
+    
+    
 }
 
 extension ChatDetailViewController: ChatNetworkManagerDelegate {
@@ -34,6 +31,7 @@ extension ChatDetailViewController: ChatNetworkManagerDelegate {
     }
         
     func onConnect(message: String) {
+        print(message)
     }
     
     func onDisconnect(message: String) {

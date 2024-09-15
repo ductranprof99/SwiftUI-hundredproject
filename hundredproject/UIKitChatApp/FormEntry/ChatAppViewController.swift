@@ -20,12 +20,13 @@ final class ChatAppViewController: UIViewController {
         
         get {
             if __host.isEmpty {
-                __host = "http://127.0.0.1:10000"
+                __host = "http://127.0.0.1:10000/"
             }
             return __host
         }
     }
-
+    @IBOutlet weak var statusLabel: UILabel!
+    
     @IBOutlet weak var checkServerButton: UIButton!
     
     @IBOutlet weak var serverHost: UITextField!
@@ -63,6 +64,29 @@ final class ChatAppViewController: UIViewController {
         if nameTextInput.text == nil || nameTextInput.text!.isEmpty || chatRoomInput.text == nil || chatRoomInput.text!.isEmpty {
             return
         }
+        let a = UIKitChatSaveInfo.instance.setInfo(
+            username: nameTextInput.text!,
+            chatRoom: chatRoomInput.text!
+        )
+        if a {
+            ChatNetworkManager.instance.joinOrCreateRoom(
+                name: UIKitChatSaveInfo.instance.username,
+                code: UIKitChatSaveInfo.instance.chatRoom,
+                join: true,
+                onFinish: { [weak self] code in
+                    DispatchQueue.main.async {
+                        _ = UIKitChatSaveInfo.instance.setInfo(chatRoom: code)
+                        let vc = UIHostingController(rootView: ChatDetailViewHost())
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                    }
+                },
+                onError: { [weak self] code in
+                    DispatchQueue.main.async {
+                        self?.statusLabel.text = code
+                    }
+                })
+        }
+        
     }
     
     @IBAction func handleCreateRoom(_ sender: Any) {
@@ -70,13 +94,26 @@ final class ChatAppViewController: UIViewController {
             // show toas
             return
         }
-        if nameTextInput.text == nil || nameTextInput.text!.isEmpty || chatRoomInput.text == nil || chatRoomInput.text!.isEmpty {
+        if nameTextInput.text == nil || nameTextInput.text!.isEmpty {
             return
         }
-        let a = UIKitChatSaveInfo.instance.setInfo(username: nameTextInput.text!, chatRoom: chatRoomInput.text!)
+        let a = UIKitChatSaveInfo.instance.setInfo(username: nameTextInput.text!)
         if a {
-            let vc = UIHostingController(rootView: ChatDetailViewHost())
-            self.navigationController?.pushViewController(vc, animated: true)
+            ChatNetworkManager.instance.joinOrCreateRoom(
+                name: UIKitChatSaveInfo.instance.username,
+                create: true,
+                onFinish: { [weak self] code in
+                    DispatchQueue.main.async {
+                        _ = UIKitChatSaveInfo.instance.setInfo(chatRoom: code)
+                        let vc = UIHostingController(rootView: ChatDetailViewHost())
+                        self?.navigationController?.pushViewController(vc, animated: true)
+                    }
+                },
+                onError: { [weak self] code in
+                    DispatchQueue.main.async {
+                        self?.statusLabel.text = code
+                    }
+                })
         }
     }
     

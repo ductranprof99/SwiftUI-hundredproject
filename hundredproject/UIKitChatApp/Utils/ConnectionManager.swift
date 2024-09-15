@@ -14,7 +14,7 @@ protocol ChatNetworkManagerDelegate {
     func onReceiveMessage(message: String) -> Void
     func onDisconnect(message: String) -> Void
     func onTyping(message: String) -> Void
-    func onNotTyping(message: String) -> Void
+    func onNotTyping() -> Void
 }
 
 extension ChatNetworkManagerDelegate {
@@ -30,7 +30,7 @@ extension ChatNetworkManagerDelegate {
     func onTyping(message: String) {
         
     }
-    func onNotTyping(message: String) {
+    func onNotTyping() {
         
     }
 }
@@ -38,7 +38,7 @@ extension ChatNetworkManagerDelegate {
 final class ChatNetworkManager {
     static let instance = ChatNetworkManager()
     
-    private let __defaultHost = "http://127.0.0.1:10000"
+    private let __defaultHost = "http://127.0.0.1:10000/"
     
     private var __host: String? = nil
     
@@ -59,7 +59,7 @@ final class ChatNetworkManager {
     var delegate: ChatNetworkManagerDelegate?
     
     func checkHost(onFinish: @escaping () -> Void, onError: @escaping () -> Void){
-        if let url = URL(string: host + "/ping") {
+        if let url = URL(string: host + "ping") {
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 guard let data = data else { return }
                 do {
@@ -77,23 +77,99 @@ final class ChatNetworkManager {
         }
     }
     
-    func createRoom(onFinish: @escaping () -> Void, onError: @escaping () -> Void){
-        if let url = URL(string: host + "/room") {
-            
+    func joinOrCreateRoom(
+        name: String,
+        code: String? = nil,
+        join: Bool = false,
+        create: Bool = false,
+        onFinish: @escaping (String?) -> Void,
+        onError: @escaping (String) -> Void) {
+        guard let url = URL(string: host + "/room") else {
+            onError("Invalid URL")
+            return
         }
-    }
-    
-    func getRoom(onFinish: @escaping () -> Void, onError: @escaping () -> Void){
-        if let url = URL(string: host + "/room") {
-            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-                
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let body: [String: Any] = [
+            "name": name,
+            "code": code ?? "",
+            "join": join,
+            "create": create
+        ]
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: body)
+        } catch {
+            onError("Failed to create request body")
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data else {
+                onError("No data received")
+                return
             }
-            task.resume()
+            
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    if let success = json["success"] as? Bool, success {
+                        onFinish(json["room_code"] as? String)
+                    } else {
+                        onError(json["error_message"] as? String ?? "Unknown error")
+                    }
+                }
+            } catch {
+                onError("Failed to parse response")
+            }
         }
+        task.resume()
     }
     
-    func connect() {
-        self.connector.connect()
+    func getRoom(room: String, name: String, onFinish: @escaping ([String: Any]) -> Void, onError: @escaping (String) -> Void) {
+        guard let url = URL(string: host + "/room") else {
+            onError("Invalid URL")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let body: [String: Any] = ["room": room, "name": name]
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: body)
+        } catch {
+            onError("Failed to create request body")
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data else {
+                onError("No data received")
+                return
+            }
+            
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    if let success = json["success"] as? Bool, success {
+                        onFinish(json)
+                    } else {
+                        onError(json["error_message"] as? String ?? "Unknown error")
+                    }
+                }
+            } catch {
+                onError("Failed to parse response")
+            }
+        }
+        task.resume()
+    }
+    
+    func connect(room: String, name: String) {
+        self.connector.connect(room: room, name: name)
         if let delegate = self.delegate {
             self.connector.listen(onConnect: delegate.onConnect,
                                   onReceiveMessage: delegate.onReceiveMessage,
@@ -106,7 +182,7 @@ final class ChatNetworkManager {
     func disconnect() {
         self.connector.disconnect()
     }
-
+    
     func sendMessage(message: String) {
         self.connector.sendMessage(message: message)
     }

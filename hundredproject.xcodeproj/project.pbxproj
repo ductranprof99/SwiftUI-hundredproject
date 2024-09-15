@@ -87,6 +87,7 @@
 		FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewWrapper.swift; sourceTree = "<group>"; };
 		FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnector.swift; sourceTree = "<group>"; };
 		FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitChatSaveInfo.swift; sourceTree = "<group>"; };
+		FAFF2C3E2C973516003EE3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +204,7 @@
 		FAC02CBF2C3CE7B30046D846 /* hundredproject */ = {
 			isa = PBXGroup;
 			children = (
+				FAFF2C3E2C973516003EE3B3 /* Info.plist */,
 				FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp(Next) */,
 				FAFF2C202C96841B003EE3B3 /* UIKitChatApp */,
 				FA06514E2C7C689F009F63F4 /* Metal */,
@@ -553,6 +555,7 @@
 				DEVELOPMENT_TEAM = M494F4824Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hundredproject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +585,7 @@
 				DEVELOPMENT_TEAM = M494F4824Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hundredproject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

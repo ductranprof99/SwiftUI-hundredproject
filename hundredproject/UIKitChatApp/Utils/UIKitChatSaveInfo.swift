@@ -19,9 +19,14 @@ final class UIKitChatSaveInfo {
         return true
     }
     
-    func setInfo(username: String, chatRoom: String) -> Bool {
-        self.username = username
-        self.chatRoom = chatRoom
+    func setInfo(username: String? = nil, chatRoom: String? = nil) -> Bool {
+        guard username != nil || chatRoom != nil else { return false }
+        if username != nil {
+            self.username = username!
+        }
+        if chatRoom != nil {
+            self.chatRoom = chatRoom!
+        }
         return true
     }
 }
