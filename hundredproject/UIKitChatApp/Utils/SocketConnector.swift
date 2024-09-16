@@ -31,11 +31,7 @@ final class ChatSocketIOConnection {
     func connect(room: String, name: String) {
         self.room = room
         self.name = name
-        
-        // Set up session data
-//        socket.setConfigs([.connectParams(["room": room, "name": name])])
         socket.connect(withPayload: ["room": room, "name": name])
-//        socket.connect()
     }
     
     func disconnect() {

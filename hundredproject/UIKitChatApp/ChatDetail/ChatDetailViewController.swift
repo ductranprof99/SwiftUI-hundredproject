@@ -32,6 +32,10 @@ final class ChatDetailViewController: MessagesViewController {
         configureMessageInputBar()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        ChatNetworkManager.instance.disconnect()
+    }
+    
     func configureMessageCollectionView() {
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messageCellDelegate = self
@@ -67,13 +71,73 @@ final class ChatDetailViewController: MessagesViewController {
     
 }
 
+// MARK: - MessagesDisplayDelegate
+extension ChatDetailViewController: MessagesDisplayDelegate {
+    func textColor(for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> UIColor {
+        isFromCurrentSender(message: message) ? .white : .darkText
+    }
+    
+    func detectorAttributes(for detector: DetectorType, and _: MessageType, at _: IndexPath) -> [NSAttributedString.Key: Any] {
+        switch detector {
+        case .hashtag, .mention: return [.foregroundColor: UIColor.blue]
+        default: return MessageLabel.defaultAttributes
+        }
+    }
+    
+    func enabledDetectors(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> [DetectorType] {
+        [.url, .address, .phoneNumber, .date, .transitInformation, .mention, .hashtag]
+    }
+    
+    func backgroundColor(for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> UIColor {
+        isFromCurrentSender(message: message) ? .green : UIColor(red: 230 / 255, green: 230 / 255, blue: 230 / 255, alpha: 1)
+    }
+    
+    func messageStyle(for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> MessageStyle {
+        return .bubble
+    }
+    
+    func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) {
+        avatarView.isHidden = true
+    }
+    
+    func avatarSize(for message: any MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGSize? {
+        return .zero
+    }
+}
+
+// MARK: - MessagesLayoutDelegate
+extension ChatDetailViewController: MessagesLayoutDelegate {
+    func cellTopLabelHeight(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> CGFloat {
+        return 10
+    }
+    
+    func cellBottomLabelHeight(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> CGFloat {
+        return 10
+    }
+    
+    func messageTopLabelHeight(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> CGFloat {
+        return 10
+    }
+    
+    func messageBottomLabelHeight(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> CGFloat {
+        return 10
+    }
+//
+//    func footerViewSize(for section: Int, in messagesCollectionView: MessagesCollectionView) -> CGSize {
+//        return CGSize(width: 0, height: 8)
+//    }
+//    
+//    func headerViewSize(for section: Int, in messagesCollectionView: MessagesCollectionView) -> CGSize {
+//        return CGSize(width: 0, height: 8)
+//    }
+}
+
+// MARK: - MessagesDataSource
 extension ChatDetailViewController: MessagesDataSource {
     var currentSender: any MessageKit.SenderType {
         return UserSender(senderId: UIKitChatSaveInfo.instance.chatRoom + UIKitChatSaveInfo.instance.username, 
                           displayName: UIKitChatSaveInfo.instance.username)
     }
-    
-    
     
     func messageForItem(at indexPath: IndexPath, in: MessagesCollectionView) -> any MessageType {
         messageList[indexPath.section]
@@ -81,6 +145,25 @@ extension ChatDetailViewController: MessagesDataSource {
     
     func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
         messageList.count
+    }
+    
+    func messageBottomLabelAttributedText(for message: any MessageType, at indexPath: IndexPath) -> NSAttributedString? {
+        return NSAttributedString(
+                        string: MessageKitDateFormatter.shared.string(from: message.sentDate),
+                        attributes: [
+                            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 10),
+                            NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.1176470588, green: 0.4470588235, blue: 0.8, alpha: 1)])
+    }
+    
+    func messageTopLabelAttributedText(for message: any MessageType, at indexPath: IndexPath) -> NSAttributedString? {
+        if message.sender.senderId == currentSender.senderId {
+            return nil
+        }
+        return NSAttributedString(
+                        string: MessageKitDateFormatter.shared.string(from: message.sentDate),
+                        attributes: [
+                            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 10),
+                            NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.1176470588, green: 0.4470588235, blue: 0.8, alpha: 1)])
     }
 }
 
@@ -118,100 +201,16 @@ extension ChatDetailViewController: InputBarAccessoryViewDelegate {
             DispatchQueue.main.async { [weak self] in
                 inputBar.sendButton.stopAnimating()
                 inputBar.inputTextView.placeholder = "Aa"
-                self?.insertMessages(components)
+                self?.sendMessage(components)
                 self?.messagesCollectionView.scrollToLastItem(animated: true)
             }
         }
     }
-    
-    private func insertMessages(_ data: [Any]) {
-        for component in data {
-            let user = currentSender
-            if let str = component as? String {
-                let message = ChatMessage(sender: user, messageId: UUID().uuidString, sentDate: Date(), kind: .text(str))
-                insertMessage(message)
-            }
-        }
-    }
-    
-    private func insertOuterMessage(username: String, message: String) {
-        let user = UserSender(senderId: UIKitChatSaveInfo.instance.chatRoom + username,
-                              displayName: username)
-        let messageWrapped = ChatMessage(sender: user, messageId: UUID().uuidString, sentDate: Date(), kind: .text(message))
-        insertMessage(messageWrapped)
-    }
 }
 
-// MARK: - MessagesDisplayDelegate
-extension ChatDetailViewController: MessagesDisplayDelegate {
-    func textColor(for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> UIColor {
-        isFromCurrentSender(message: message) ? .white : .darkText
-    }
-    
-    func detectorAttributes(for detector: DetectorType, and _: MessageType, at _: IndexPath) -> [NSAttributedString.Key: Any] {
-        switch detector {
-        case .hashtag, .mention: return [.foregroundColor: UIColor.blue]
-        default: return MessageLabel.defaultAttributes
-        }
-    }
-    
-    func enabledDetectors(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> [DetectorType] {
-        [.url, .address, .phoneNumber, .date, .transitInformation, .mention, .hashtag]
-    }
-    
-    func backgroundColor(for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> UIColor {
-        isFromCurrentSender(message: message) ? .green : UIColor(red: 230 / 255, green: 230 / 255, blue: 230 / 255, alpha: 1)
-    }
-    
-    func messageStyle(for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> MessageStyle {
-        let tail: MessageStyle.TailCorner = isFromCurrentSender(message: message) ? .bottomRight : .bottomLeft
-        return .bubbleTail(tail, .curved)
-    }
-    
-    func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at _: IndexPath, in _: MessagesCollectionView) {
-//        let avatar = SampleData.shared.getAvatarFor(sender: message.sender)
-//        avatarView.set(avatar: avatar)
-    }
-}
-
-// MARK: - MessagesLayoutDelegate
-extension ChatDetailViewController: MessagesLayoutDelegate {
-    func cellTopLabelHeight(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> CGFloat {
-        18
-    }
-    
-    func cellBottomLabelHeight(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> CGFloat {
-        17
-    }
-    
-    func messageTopLabelHeight(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> CGFloat {
-        20
-    }
-    
-    func messageBottomLabelHeight(for _: MessageType, at _: IndexPath, in _: MessagesCollectionView) -> CGFloat {
-        16
-    }
-}
-
-// MARK: - ChatNetworkManagerDelegate
-extension ChatDetailViewController: ChatNetworkManagerDelegate {
-    func onTyping(message: String) {
-    }
-        
-    func onConnect(message: String) {
-        
-    }
-    
-    func onDisconnect(message: String) {
-    }
-    
-    func onReceiveMessage(message: String) {
-    }
-}
-
-// MARK: - Helper
+// MARK: - view and logic interpolation
 extension ChatDetailViewController {
-    func insertMessage(_ message: ChatMessage) {
+    private func insertMessage(_ message: ChatMessage) {
         messageList.append(message)
         // Reload last section to update header/footer labels and insert a new one
         messagesCollectionView.performBatchUpdates({
@@ -228,9 +227,45 @@ extension ChatDetailViewController {
     
     func isLastSectionVisible() -> Bool {
         guard !messageList.isEmpty else { return false }
-
+        
         let lastIndexPath = IndexPath(item: 0, section: messageList.count - 1)
-
+        
         return messagesCollectionView.indexPathsForVisibleItems.contains(lastIndexPath)
-      }
+    }
+    
+    private func sendMessage(_ data: [Any]) {
+        for component in data {
+            let user = currentSender
+            if let str = component as? String {
+                let message = ChatMessage(sender: user, messageId: UUID().uuidString, sentDate: Date(), kind: .text(str))
+                ChatNetworkManager.instance.sendMessage(message: str)
+                insertMessage(message)
+            }
+        }
+    }
+    
+    private func insertAnotherUserMessage(username: String, message: String) {
+        let user = UserSender(senderId: UIKitChatSaveInfo.instance.chatRoom + username,
+                              displayName: username)
+        let messageWrapped = ChatMessage(sender: user, messageId: UUID().uuidString, sentDate: Date(), kind: .text(message))
+        insertMessage(messageWrapped)
+    }
+}
+
+// MARK: - ChatNetworkManagerDelegate
+extension ChatDetailViewController: ChatNetworkManagerDelegate {
+    func onTyping(message: String) {
+    }
+        
+    func onConnect(message: String) {
+        
+    }
+    
+    func onDisconnect(message: String) {
+        
+    }
+    
+    func onReceiveMessage(username: String,message: String) {
+        insertAnotherUserMessage(username: username, message: message)
+    }
 }

@@ -46,6 +46,7 @@ def room():
             room = generate_unique_code(4)
             rooms[room] = {"members": 0, "messages": [], 'member_name': []}
         elif code not in rooms:
+            print(rooms)
             return json.dumps({'success':False, 'error': 3, 'error_message': "Room does not exist."}), 200, {'ContentType':'application/json'}
         elif join and name in rooms[code]["member_name"]:
             return json.dumps({'success':False, 'error': 4, 'error_message': "Username created"}), 200, {'ContentType':'application/json'}
@@ -76,6 +77,7 @@ def message(data):
 @socketio.on("connect")
 def connect(auth):
     print(auth)
+    print(f"======={session}========")
     room = session.get("room")
     name = session.get("name")
     if not room or not name:
