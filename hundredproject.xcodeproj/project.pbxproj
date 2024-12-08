@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */; };
 		FA0651532C7C6EE2009F63F4 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0651522C7C6EE2009F63F4 /* Renderer.swift */; };
+		FA07BF182CEACB4E002F98E4 /* TwitterSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF172CEACB4E002F98E4 /* TwitterSignup.swift */; };
+		FA07BF1A2CEACB5D002F98E4 /* X+String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF192CEACB5D002F98E4 /* X+String++.swift */; };
+		FA07BF1C2CEACB8A002F98E4 /* X+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF1B2CEACB8A002F98E4 /* X+Auth.swift */; };
+		FA07BF202CEAE743002F98E4 /* X.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF1F2CEAE743002F98E4 /* X.swift */; };
+		FA07BF222CEAE775002F98E4 /* X+OAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF212CEAE775002F98E4 /* X+OAuthHelper.swift */; };
+		FA07BF242CEAE7C1002F98E4 /* X+OAuthCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF232CEAE7C1002F98E4 /* X+OAuthCredentials.swift */; };
+		FA07BF262CEAE7F8002F98E4 /* X+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF252CEAE7F8002F98E4 /* X+Error.swift */; };
+		FA07BF282CEAEE59002F98E4 /* X+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF272CEAEE59002F98E4 /* X+Route.swift */; };
+		FA07BF2C2CEAF2D3002F98E4 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF2B2CEAF2D3002F98E4 /* AsyncButton.swift */; };
+		FA07BF302CEAF620002F98E4 /* X+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF2F2CEAF620002F98E4 /* X+Methods.swift */; };
+		FA07BF322CEAF64B002F98E4 /* X+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF312CEAF64B002F98E4 /* X+User.swift */; };
+		FA07BF342CEAF9B1002F98E4 /* X+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF332CEAF9B1002F98E4 /* X+Post.swift */; };
+		FA07BF362CEAFBAD002F98E4 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF352CEAFBAD002F98E4 /* KeychainError.swift */; };
 		FA28C1872C68B859000464A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA28C1862C68B859000464A1 /* GoogleService-Info.plist */; };
 		FA28C18C2C68BBE5000464A1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18B2C68BBE5000464A1 /* FirebaseAnalytics */; };
 		FA28C18E2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18D2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -34,6 +47,7 @@
 		FA28C1B62C68BBE5000464A1 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C1B52C68BBE5000464A1 /* FirebaseStorageCombine-Community */; };
 		FA28C1B82C68BBE6000464A1 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C1B72C68BBE6000464A1 /* FirebaseVertexAI-Preview */; };
 		FA28C1BB2C68C105000464A1 /* FirebaseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28C1BA2C68C105000464A1 /* FirebaseLog.swift */; };
+		FA346CE72CFAFEF000300030 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = FA346CE62CFAFEF000300030 /* Shader.metal */; };
 		FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */; };
 		FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42C2C48F38E00F8220D /* SlipperCard.swift */; };
 		FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */; };
@@ -64,8 +78,23 @@
 /* Begin PBXFileReference section */
 		FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLesson1.swift; sourceTree = "<group>"; };
 		FA0651522C7C6EE2009F63F4 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		FA07BF172CEACB4E002F98E4 /* TwitterSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSignup.swift; sourceTree = "<group>"; };
+		FA07BF192CEACB5D002F98E4 /* X+String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+String++.swift"; sourceTree = "<group>"; };
+		FA07BF1B2CEACB8A002F98E4 /* X+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Auth.swift"; sourceTree = "<group>"; };
+		FA07BF1F2CEAE743002F98E4 /* X.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X.swift; sourceTree = "<group>"; };
+		FA07BF212CEAE775002F98E4 /* X+OAuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+OAuthHelper.swift"; sourceTree = "<group>"; };
+		FA07BF232CEAE7C1002F98E4 /* X+OAuthCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+OAuthCredentials.swift"; sourceTree = "<group>"; };
+		FA07BF252CEAE7F8002F98E4 /* X+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Error.swift"; sourceTree = "<group>"; };
+		FA07BF272CEAEE59002F98E4 /* X+Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Route.swift"; sourceTree = "<group>"; };
+		FA07BF2B2CEAF2D3002F98E4 /* AsyncButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		FA07BF2F2CEAF620002F98E4 /* X+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Methods.swift"; sourceTree = "<group>"; };
+		FA07BF312CEAF64B002F98E4 /* X+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+User.swift"; sourceTree = "<group>"; };
+		FA07BF332CEAF9B1002F98E4 /* X+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Post.swift"; sourceTree = "<group>"; };
+		FA07BF352CEAFBAD002F98E4 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
 		FA28C1862C68B859000464A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA28C1BA2C68C105000464A1 /* FirebaseLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLog.swift; sourceTree = "<group>"; };
+		FA346CE52CFAFAA800300030 /* definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+		FA346CE62CFAFEF000300030 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 		FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAndBlur.swift; sourceTree = "<group>"; };
 		FA77D42C2C48F38E00F8220D /* SlipperCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipperCard.swift; sourceTree = "<group>"; };
 		FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewPage.swift; sourceTree = "<group>"; };
@@ -142,8 +171,30 @@
 			children = (
 				FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */,
 				FA0651522C7C6EE2009F63F4 /* Renderer.swift */,
+				FA346CE52CFAFAA800300030 /* definitions.h */,
+				FA346CE62CFAFEF000300030 /* Shader.metal */,
 			);
 			path = Lesson1;
+			sourceTree = "<group>";
+		};
+		FA07BF162CEACB23002F98E4 /* TwitterSignup */ = {
+			isa = PBXGroup;
+			children = (
+				FA07BF352CEAFBAD002F98E4 /* KeychainError.swift */,
+				FA07BF172CEACB4E002F98E4 /* TwitterSignup.swift */,
+				FA07BF2B2CEAF2D3002F98E4 /* AsyncButton.swift */,
+				FA07BF192CEACB5D002F98E4 /* X+String++.swift */,
+				FA07BF272CEAEE59002F98E4 /* X+Route.swift */,
+				FA07BF2F2CEAF620002F98E4 /* X+Methods.swift */,
+				FA07BF252CEAE7F8002F98E4 /* X+Error.swift */,
+				FA07BF232CEAE7C1002F98E4 /* X+OAuthCredentials.swift */,
+				FA07BF212CEAE775002F98E4 /* X+OAuthHelper.swift */,
+				FA07BF312CEAF64B002F98E4 /* X+User.swift */,
+				FA07BF332CEAF9B1002F98E4 /* X+Post.swift */,
+				FA07BF1B2CEACB8A002F98E4 /* X+Auth.swift */,
+				FA07BF1F2CEAE743002F98E4 /* X.swift */,
+			);
+			path = TwitterSignup;
 			sourceTree = "<group>";
 		};
 		FA28C1882C68B865000464A1 /* Plist */ = {
@@ -215,6 +266,7 @@
 				FAC002ED2C5A413500946887 /* 2048 */,
 				FA7C07972C4E40B0004C7638 /* CombineView */,
 				FAC02CD02C3CE9250046D846 /* TransitionAndBlur */,
+				FA07BF162CEACB23002F98E4 /* TwitterSignup */,
 				FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */,
 				FAC02CC22C3CE7B40046D846 /* ContentView.swift */,
 				FAC02CD32C3CEB820046D846 /* ContentViewButtonStyle.swift */,
@@ -406,26 +458,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC02CD42C3CEB820046D846 /* ContentViewButtonStyle.swift in Sources */,
+				FA07BF362CEAFBAD002F98E4 /* KeychainError.swift in Sources */,
+				FA07BF302CEAF620002F98E4 /* X+Methods.swift in Sources */,
 				FAC02CCF2C3CE86C0046D846 /* ContentViewData.swift in Sources */,
 				FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */,
 				FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */,
 				FAFF2C3B2C96F41E003EE3B3 /* SocketConnector.swift in Sources */,
+				FA07BF342CEAF9B1002F98E4 /* X+Post.swift in Sources */,
 				FAFF2C432C975DA6003EE3B3 /* ChatMessageModels.swift in Sources */,
+				FA07BF1A2CEACB5D002F98E4 /* X+String++.swift in Sources */,
 				FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */,
+				FA07BF242CEAE7C1002F98E4 /* X+OAuthCredentials.swift in Sources */,
+				FA346CE72CFAFEF000300030 /* Shader.metal in Sources */,
 				FAFF2C2A2C96D386003EE3B3 /* ConnectionManager.swift in Sources */,
 				FA0651532C7C6EE2009F63F4 /* Renderer.swift in Sources */,
 				FAFF2C272C968935003EE3B3 /* ChatAppViewController.swift in Sources */,
 				FAFF2C362C96DB04003EE3B3 /* UIKitViewWrapper.swift in Sources */,
 				FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */,
+				FA07BF202CEAE743002F98E4 /* X.swift in Sources */,
 				FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */,
+				FA07BF262CEAE7F8002F98E4 /* X+Error.swift in Sources */,
 				FAFF2C3D2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift in Sources */,
+				FA07BF182CEACB4E002F98E4 /* TwitterSignup.swift in Sources */,
 				FAFF2C232C968445003EE3B3 /* UIKitChatApp.swift in Sources */,
 				FA28C1BB2C68C105000464A1 /* FirebaseLog.swift in Sources */,
 				FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */,
 				FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */,
 				FAFF2C302C96D4FB003EE3B3 /* ChatDetailViewController.swift in Sources */,
+				FA07BF2C2CEAF2D3002F98E4 /* AsyncButton.swift in Sources */,
+				FA07BF222CEAE775002F98E4 /* X+OAuthHelper.swift in Sources */,
 				FAFF2C342C96D7A8003EE3B3 /* ChatDetailViewHost.swift in Sources */,
 				FAD649592C5E31390025775F /* GameMainView.swift in Sources */,
+				FA07BF1C2CEACB8A002F98E4 /* X+Auth.swift in Sources */,
+				FA07BF282CEAEE59002F98E4 /* X+Route.swift in Sources */,
+				FA07BF322CEAF64B002F98E4 /* X+User.swift in Sources */,
 				FAD6495E2C5E35B90025775F /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DucTran.hundredproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = hundredproject/Metal/Lesson1/definitions.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -607,6 +674,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DucTran.hundredproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = hundredproject/Metal/Lesson1/definitions.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

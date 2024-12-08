@@ -47,6 +47,8 @@ enum ContentViewData: Identifiable {
             }
         case .chatUIKit:
             UIKitChatApp()
+        case .metalLevel1:
+            MetalLesson1()
         default:
             EmptyView()
         }
