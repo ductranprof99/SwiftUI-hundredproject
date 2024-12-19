@@ -14,7 +14,9 @@ struct ContentView: View {
         .transitionAndBlur,
         .combineView,
         .metalLevel1,
-        .chatUIKit
+        .chatUIKit,
+        .chatSwiftUI,
+        .navigationStack
     ]
     
     var body: some View {

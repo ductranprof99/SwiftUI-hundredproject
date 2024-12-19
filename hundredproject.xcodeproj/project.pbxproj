@@ -22,6 +22,13 @@
 		FA07BF322CEAF64B002F98E4 /* X+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF312CEAF64B002F98E4 /* X+User.swift */; };
 		FA07BF342CEAF9B1002F98E4 /* X+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF332CEAF9B1002F98E4 /* X+Post.swift */; };
 		FA07BF362CEAFBAD002F98E4 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF352CEAFBAD002F98E4 /* KeychainError.swift */; };
+		FA1B0AF22D05853200720EC4 /* MetalLesson2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AF12D05853200720EC4 /* MetalLesson2.swift */; };
+		FA1B0AF62D05857500720EC4 /* camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AF52D05857500720EC4 /* camera.swift */; };
+		FA1B0AF82D05857E00720EC4 /* simpleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AF72D05857E00720EC4 /* simpleComponent.swift */; };
+		FA1B0AFA2D05858C00720EC4 /* renderScence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AF92D05858C00720EC4 /* renderScence.swift */; };
+		FA1B0AFC2D05883400720EC4 /* TriangleMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AFB2D05883400720EC4 /* TriangleMesh.swift */; };
+		FA1B0AFE2D05885E00720EC4 /* LinearAlgebro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AFD2D05885E00720EC4 /* LinearAlgebro.swift */; };
+		FA1B0B002D05889300720EC4 /* RendererLessson2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AFF2D05889300720EC4 /* RendererLessson2.swift */; };
 		FA28C1872C68B859000464A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA28C1862C68B859000464A1 /* GoogleService-Info.plist */; };
 		FA28C18C2C68BBE5000464A1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18B2C68BBE5000464A1 /* FirebaseAnalytics */; };
 		FA28C18E2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18D2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -51,6 +58,11 @@
 		FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */; };
 		FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42C2C48F38E00F8220D /* SlipperCard.swift */; };
 		FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */; };
+		FAA147B82D0C826E009848C7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147B72D0C826E009848C7 /* ChatView.swift */; };
+		FAA147BA2D0C8282009848C7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147B92D0C8282009848C7 /* MessageView.swift */; };
+		FAA147BE2D0F14F6009848C7 /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147BD2D0F14F6009848C7 /* BubbleShape.swift */; };
+		FAA147C02D1134DE009848C7 /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */; };
+		FAA147C62D13BB1C009848C7 /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */; };
 		FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */; };
 		FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC22C3CE7B40046D846 /* ContentView.swift */; };
 		FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC42C3CE7B40046D846 /* Assets.xcassets */; };
@@ -91,6 +103,13 @@
 		FA07BF312CEAF64B002F98E4 /* X+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+User.swift"; sourceTree = "<group>"; };
 		FA07BF332CEAF9B1002F98E4 /* X+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Post.swift"; sourceTree = "<group>"; };
 		FA07BF352CEAFBAD002F98E4 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		FA1B0AF12D05853200720EC4 /* MetalLesson2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLesson2.swift; sourceTree = "<group>"; };
+		FA1B0AF52D05857500720EC4 /* camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera.swift; sourceTree = "<group>"; };
+		FA1B0AF72D05857E00720EC4 /* simpleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleComponent.swift; sourceTree = "<group>"; };
+		FA1B0AF92D05858C00720EC4 /* renderScence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = renderScence.swift; sourceTree = "<group>"; };
+		FA1B0AFB2D05883400720EC4 /* TriangleMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleMesh.swift; sourceTree = "<group>"; };
+		FA1B0AFD2D05885E00720EC4 /* LinearAlgebro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearAlgebro.swift; sourceTree = "<group>"; };
+		FA1B0AFF2D05889300720EC4 /* RendererLessson2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererLessson2.swift; sourceTree = "<group>"; };
 		FA28C1862C68B859000464A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA28C1BA2C68C105000464A1 /* FirebaseLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLog.swift; sourceTree = "<group>"; };
 		FA346CE52CFAFAA800300030 /* definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
@@ -98,6 +117,11 @@
 		FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAndBlur.swift; sourceTree = "<group>"; };
 		FA77D42C2C48F38E00F8220D /* SlipperCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipperCard.swift; sourceTree = "<group>"; };
 		FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewPage.swift; sourceTree = "<group>"; };
+		FAA147B72D0C826E009848C7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		FAA147B92D0C8282009848C7 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		FAA147BD2D0F14F6009848C7 /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
+		FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
+		FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
 		FAC02CBD2C3CE7B30046D846 /* hundredproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hundredproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hundredprojectApp.swift; sourceTree = "<group>"; };
 		FAC02CC22C3CE7B40046D846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -161,7 +185,10 @@
 		FA06514E2C7C689F009F63F4 /* Metal */ = {
 			isa = PBXGroup;
 			children = (
+				FA346CE52CFAFAA800300030 /* definitions.h */,
+				FA346CE62CFAFEF000300030 /* Shader.metal */,
 				FA06514F2C7C68AB009F63F4 /* Lesson1 */,
+				FA1B0AF02D05850B00720EC4 /* Lesson2 */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -171,8 +198,6 @@
 			children = (
 				FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */,
 				FA0651522C7C6EE2009F63F4 /* Renderer.swift */,
-				FA346CE52CFAFAA800300030 /* definitions.h */,
-				FA346CE62CFAFEF000300030 /* Shader.metal */,
 			);
 			path = Lesson1;
 			sourceTree = "<group>";
@@ -195,6 +220,28 @@
 				FA07BF1F2CEAE743002F98E4 /* X.swift */,
 			);
 			path = TwitterSignup;
+			sourceTree = "<group>";
+		};
+		FA1B0AF02D05850B00720EC4 /* Lesson2 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B0AF32D05855D00720EC4 /* Model */,
+				FA1B0AF12D05853200720EC4 /* MetalLesson2.swift */,
+				FA1B0AFB2D05883400720EC4 /* TriangleMesh.swift */,
+				FA1B0AFD2D05885E00720EC4 /* LinearAlgebro.swift */,
+				FA1B0AFF2D05889300720EC4 /* RendererLessson2.swift */,
+			);
+			path = Lesson2;
+			sourceTree = "<group>";
+		};
+		FA1B0AF32D05855D00720EC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B0AF52D05857500720EC4 /* camera.swift */,
+				FA1B0AF72D05857E00720EC4 /* simpleComponent.swift */,
+				FA1B0AF92D05858C00720EC4 /* renderScence.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FA28C1882C68B865000464A1 /* Plist */ = {
@@ -226,6 +273,23 @@
 				FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */,
 			);
 			path = CombineView;
+			sourceTree = "<group>";
+		};
+		FAA147BC2D0F14E5009848C7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FAA147BD2D0F14F6009848C7 /* BubbleShape.swift */,
+				FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FAA147C52D13BB1C009848C7 /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */,
+			);
+			path = NavigationStack;
 			sourceTree = "<group>";
 		};
 		FAC002ED2C5A413500946887 /* 2048 */ = {
@@ -260,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				FAFF2C3E2C973516003EE3B3 /* Info.plist */,
+				FAA147C52D13BB1C009848C7 /* NavigationStack */,
 				FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp(Next) */,
 				FAFF2C202C96841B003EE3B3 /* UIKitChatApp */,
 				FA06514E2C7C689F009F63F4 /* Metal */,
@@ -316,6 +381,9 @@
 		FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp(Next) */ = {
 			isa = PBXGroup;
 			children = (
+				FAA147BC2D0F14E5009848C7 /* Helper */,
+				FAA147B72D0C826E009848C7 /* ChatView.swift */,
+				FAA147B92D0C8282009848C7 /* MessageView.swift */,
 			);
 			path = "SwiftUIChatApp(Next)";
 			sourceTree = "<group>";
@@ -460,13 +528,17 @@
 				FAC02CD42C3CEB820046D846 /* ContentViewButtonStyle.swift in Sources */,
 				FA07BF362CEAFBAD002F98E4 /* KeychainError.swift in Sources */,
 				FA07BF302CEAF620002F98E4 /* X+Methods.swift in Sources */,
+				FAA147C62D13BB1C009848C7 /* NavigationStackBootcamp.swift in Sources */,
 				FAC02CCF2C3CE86C0046D846 /* ContentViewData.swift in Sources */,
+				FAA147B82D0C826E009848C7 /* ChatView.swift in Sources */,
+				FA1B0B002D05889300720EC4 /* RendererLessson2.swift in Sources */,
 				FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */,
 				FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */,
 				FAFF2C3B2C96F41E003EE3B3 /* SocketConnector.swift in Sources */,
 				FA07BF342CEAF9B1002F98E4 /* X+Post.swift in Sources */,
 				FAFF2C432C975DA6003EE3B3 /* ChatMessageModels.swift in Sources */,
 				FA07BF1A2CEACB5D002F98E4 /* X+String++.swift in Sources */,
+				FA1B0AF62D05857500720EC4 /* camera.swift in Sources */,
 				FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */,
 				FA07BF242CEAE7C1002F98E4 /* X+OAuthCredentials.swift in Sources */,
 				FA346CE72CFAFEF000300030 /* Shader.metal in Sources */,
@@ -475,19 +547,27 @@
 				FAFF2C272C968935003EE3B3 /* ChatAppViewController.swift in Sources */,
 				FAFF2C362C96DB04003EE3B3 /* UIKitViewWrapper.swift in Sources */,
 				FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */,
+				FA1B0AFC2D05883400720EC4 /* TriangleMesh.swift in Sources */,
 				FA07BF202CEAE743002F98E4 /* X.swift in Sources */,
 				FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */,
+				FA1B0AFE2D05885E00720EC4 /* LinearAlgebro.swift in Sources */,
 				FA07BF262CEAE7F8002F98E4 /* X+Error.swift in Sources */,
+				FA1B0AFA2D05858C00720EC4 /* renderScence.swift in Sources */,
+				FA1B0AF22D05853200720EC4 /* MetalLesson2.swift in Sources */,
 				FAFF2C3D2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift in Sources */,
 				FA07BF182CEACB4E002F98E4 /* TwitterSignup.swift in Sources */,
 				FAFF2C232C968445003EE3B3 /* UIKitChatApp.swift in Sources */,
+				FAA147BE2D0F14F6009848C7 /* BubbleShape.swift in Sources */,
 				FA28C1BB2C68C105000464A1 /* FirebaseLog.swift in Sources */,
 				FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */,
 				FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */,
+				FAA147C02D1134DE009848C7 /* LoadMoreView.swift in Sources */,
 				FAFF2C302C96D4FB003EE3B3 /* ChatDetailViewController.swift in Sources */,
 				FA07BF2C2CEAF2D3002F98E4 /* AsyncButton.swift in Sources */,
 				FA07BF222CEAE775002F98E4 /* X+OAuthHelper.swift in Sources */,
+				FA1B0AF82D05857E00720EC4 /* simpleComponent.swift in Sources */,
 				FAFF2C342C96D7A8003EE3B3 /* ChatDetailViewHost.swift in Sources */,
+				FAA147BA2D0C8282009848C7 /* MessageView.swift in Sources */,
 				FAD649592C5E31390025775F /* GameMainView.swift in Sources */,
 				FA07BF1C2CEACB8A002F98E4 /* X+Auth.swift in Sources */,
 				FA07BF282CEAEE59002F98E4 /* X+Route.swift in Sources */,
@@ -643,7 +723,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DucTran.hundredproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = hundredproject/Metal/Lesson1/definitions.h;
+				SWIFT_OBJC_BRIDGING_HEADER = hundredproject/Metal/definitions.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -674,7 +754,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DucTran.hundredproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = hundredproject/Metal/Lesson1/definitions.h;
+				SWIFT_OBJC_BRIDGING_HEADER = hundredproject/Metal/definitions.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

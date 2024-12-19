@@ -14,6 +14,8 @@ enum ContentViewData: Identifiable {
     case metalLevel1
     case reactiveX1
     case chatUIKit
+    case chatSwiftUI
+    case navigationStack
     case dummy
     
     var buttonName: String {
@@ -30,6 +32,10 @@ enum ContentViewData: Identifiable {
             return "Reactive x lesson 1"
         case .chatUIKit:
             return "UIKit chatapp"
+        case .chatSwiftUI:
+            return "Swiftui chatapp"
+        case .navigationStack:
+            return "Nav bootcamp"
         case .dummy:
             return "Dummy page"
         }
@@ -49,6 +55,10 @@ enum ContentViewData: Identifiable {
             UIKitChatApp()
         case .metalLevel1:
             MetalLesson1()
+        case .chatSwiftUI:
+            ChatView()
+        case .navigationStack:
+            NavigationStackBootcamp()
         default:
             EmptyView()
         }
@@ -85,6 +95,16 @@ enum ContentViewData: Identifiable {
             return [
                 "view": "UIKit chatapp",
                 "view_number": 6
+            ]
+        case .chatSwiftUI:
+            return [
+                "view": "SwiftUI chatapp",
+                "view_number": 7
+            ]
+        case .navigationStack:
+            return [
+                "view": "Navigation bootcamp",
+                "view_number": 8
             ]
         default:
             return [:]
