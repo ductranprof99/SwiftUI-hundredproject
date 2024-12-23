@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum ContentViewData: Identifiable {
+public enum Destination: Codable, Hashable, Identifiable {
     case transitionAndBlur
     case combineView
     case game2048
@@ -15,7 +15,14 @@ enum ContentViewData: Identifiable {
     case reactiveX1
     case chatUIKit
     case chatSwiftUI
-    case navigationStack
+    case navigationBootcampStack
+    
+    // Simple view
+    case simpleoView(text: String)
+    
+    // case SubView
+    
+    // case empty
     case dummy
     
     var buttonName: String {
@@ -34,10 +41,12 @@ enum ContentViewData: Identifiable {
             return "UIKit chatapp"
         case .chatSwiftUI:
             return "Swiftui chatapp"
-        case .navigationStack:
+        case .navigationBootcampStack:
             return "Nav bootcamp"
         case .dummy:
             return "Dummy page"
+        default:
+            return ""
         }
     }
     
@@ -57,13 +66,13 @@ enum ContentViewData: Identifiable {
             MetalLesson1()
         case .chatSwiftUI:
             ChatView()
-        case .navigationStack:
+        case .navigationBootcampStack:
             NavigationStackBootcamp()
         default:
             EmptyView()
         }
     }
-    
+        
     var eventParam: [String: Any] {
         switch self {
         case .transitionAndBlur:
@@ -101,7 +110,7 @@ enum ContentViewData: Identifiable {
                 "view": "SwiftUI chatapp",
                 "view_number": 7
             ]
-        case .navigationStack:
+        case .navigationBootcampStack:
             return [
                 "view": "Navigation bootcamp",
                 "view_number": 8
@@ -111,7 +120,7 @@ enum ContentViewData: Identifiable {
         }
     }
     
-    var id: Self {
+    public var id: Self {
         return self
     }
 }

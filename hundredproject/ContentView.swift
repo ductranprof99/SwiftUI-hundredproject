@@ -8,24 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var selection: ContentViewData? = nil
+    @State var selection: Destination? = nil
+    @ObservedObject var router = Router()
     
-    let listView: [ContentViewData] = [
+    let listView: [Destination] = [
         .transitionAndBlur,
         .combineView,
         .metalLevel1,
         .chatUIKit,
         .chatSwiftUI,
-        .navigationStack
+        .navigationBootcampStack
     ]
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $router.navPath) {
             List {
                 ForEach(self.listView) { view in
-                    NavigationLink {
-                        view.childNavigationView
-                    } label: {
+                    NavigationLink(value: view){
                         HStack(alignment: .center) {
                             Spacer()
                             Label(
@@ -42,9 +41,11 @@ struct ContentView: View {
                         }
                     }
                 }
+            }.navigationDestination(for: Destination.self) {
+                $0.childNavigationView
             }
             .navigationTitle("Navigation")
-        }
+        }.environmentObject(router)
         
     }
 }

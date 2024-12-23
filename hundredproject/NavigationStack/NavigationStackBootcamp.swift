@@ -9,15 +9,15 @@ import SwiftUI
 import Firebase
 
 struct NavigationStackBootcamp: View {
-    @State var path: [String] = []
+    @EnvironmentObject var router: Router
+    
     let fruits = ["Apple", "Orange", "Banana"]
     
     var body: some View {
-        NavigationStack(path: $path) {
             ScrollView {
                 VStack(spacing: 40) {
                     // 1: Navigation link
-                    ForEach(0..<10) { x in   // x is Int, hashable type
+                    ForEach(0..<3) { x in   // x is Int, hashable type
                         NavigationLink(value: x) {
                             Text("Click me: \(x)")
                         }
@@ -32,20 +32,26 @@ struct NavigationStackBootcamp: View {
                     
                     // 3: Path
                     Button("Big Seque") {
-                        path.append(contentsOf: ["hohoho", "Nah", "Young man"])
+                        router.navigate(
+                            .simpleoView(text: "null"),
+                            .simpleoView(text: "null2")
+                        )
+                    }
+                    
+                    Button("imma bec pro") {
+                        router.navigateToRoot()
                     }
                 }
             }.navigationDestination(
                 for: Int.self /* hasable_type vd: Int.self, String.self 8*/ , // matching 1
                 destination: {
                     ChildNavigationStack(value: $0)
-                }).navigationDestination(for: String.self,
-                                         destination: { strVal in
-                    Text(strVal)
-                })
-        }.onAppear {
-            FirebaseEventLogging.shared.loggingScreen(.navigationStack)
-        }
+            }).navigationDestination(for: String.self,
+                                     destination: { strVal in
+                Text(strVal)
+            }).onAppear {
+                FirebaseEventLogging.shared.loggingScreen(.navigationBootcampStack)
+            }
     }
 }
 
@@ -62,6 +68,7 @@ struct ChildNavigationStack: View {
     }
 }
 
-#Preview {
+#Preview("Default State") {
     NavigationStackBootcamp()
+        .environmentObject(Router())
 }

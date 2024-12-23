@@ -63,11 +63,12 @@
 		FAA147BE2D0F14F6009848C7 /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147BD2D0F14F6009848C7 /* BubbleShape.swift */; };
 		FAA147C02D1134DE009848C7 /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */; };
 		FAA147C62D13BB1C009848C7 /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */; };
+		FAA147C82D1503DB009848C7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C72D1503DB009848C7 /* Router.swift */; };
 		FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */; };
 		FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC22C3CE7B40046D846 /* ContentView.swift */; };
 		FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC42C3CE7B40046D846 /* Assets.xcassets */; };
 		FAC02CC82C3CE7B40046D846 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC72C3CE7B40046D846 /* Preview Assets.xcassets */; };
-		FAC02CCF2C3CE86C0046D846 /* ContentViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CCE2C3CE86C0046D846 /* ContentViewData.swift */; };
+		FAC02CCF2C3CE86C0046D846 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CCE2C3CE86C0046D846 /* Destination.swift */; };
 		FAC02CD42C3CEB820046D846 /* ContentViewButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CD32C3CEB820046D846 /* ContentViewButtonStyle.swift */; };
 		FAD649592C5E31390025775F /* GameMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD649582C5E31390025775F /* GameMainView.swift */; };
 		FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD6495B2C5E35A20025775F /* Matrix.swift */; };
@@ -122,12 +123,13 @@
 		FAA147BD2D0F14F6009848C7 /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
 		FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
 		FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
+		FAA147C72D1503DB009848C7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FAC02CBD2C3CE7B30046D846 /* hundredproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hundredproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hundredprojectApp.swift; sourceTree = "<group>"; };
 		FAC02CC22C3CE7B40046D846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAC02CC42C3CE7B40046D846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC02CC72C3CE7B40046D846 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FAC02CCE2C3CE86C0046D846 /* ContentViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewData.swift; sourceTree = "<group>"; };
+		FAC02CCE2C3CE86C0046D846 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		FAC02CD32C3CEB820046D846 /* ContentViewButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewButtonStyle.swift; sourceTree = "<group>"; };
 		FAD649582C5E31390025775F /* GameMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMainView.swift; sourceTree = "<group>"; };
 		FAD6495B2C5E35A20025775F /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
@@ -335,7 +337,8 @@
 				FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */,
 				FAC02CC22C3CE7B40046D846 /* ContentView.swift */,
 				FAC02CD32C3CEB820046D846 /* ContentViewButtonStyle.swift */,
-				FAC02CCE2C3CE86C0046D846 /* ContentViewData.swift */,
+				FAA147C72D1503DB009848C7 /* Router.swift */,
+				FAC02CCE2C3CE86C0046D846 /* Destination.swift */,
 				FAC02CC42C3CE7B40046D846 /* Assets.xcassets */,
 				FAC02CC62C3CE7B40046D846 /* Preview Content */,
 			);
@@ -529,7 +532,7 @@
 				FA07BF362CEAFBAD002F98E4 /* KeychainError.swift in Sources */,
 				FA07BF302CEAF620002F98E4 /* X+Methods.swift in Sources */,
 				FAA147C62D13BB1C009848C7 /* NavigationStackBootcamp.swift in Sources */,
-				FAC02CCF2C3CE86C0046D846 /* ContentViewData.swift in Sources */,
+				FAC02CCF2C3CE86C0046D846 /* Destination.swift in Sources */,
 				FAA147B82D0C826E009848C7 /* ChatView.swift in Sources */,
 				FA1B0B002D05889300720EC4 /* RendererLessson2.swift in Sources */,
 				FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */,
@@ -563,6 +566,7 @@
 				FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */,
 				FAA147C02D1134DE009848C7 /* LoadMoreView.swift in Sources */,
 				FAFF2C302C96D4FB003EE3B3 /* ChatDetailViewController.swift in Sources */,
+				FAA147C82D1503DB009848C7 /* Router.swift in Sources */,
 				FA07BF2C2CEAF2D3002F98E4 /* AsyncButton.swift in Sources */,
 				FA07BF222CEAE775002F98E4 /* X+OAuthHelper.swift in Sources */,
 				FA1B0AF82D05857E00720EC4 /* simpleComponent.swift in Sources */,

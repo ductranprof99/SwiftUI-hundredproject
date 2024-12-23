@@ -14,8 +14,8 @@ final class FirebaseEventLogging {
         Analytics.logEvent(eventName, parameters: parameters)
     }
     
-    func loggingScreen(_ screen: ContentViewData) {
+    func loggingScreen(_ screen: Destination) {
         let params = screen.eventParam
-        Analytics.logEvent(screen.buttonName, parameters: params)
+        Analytics.logEvent("display", parameters: params)
     }
 }
