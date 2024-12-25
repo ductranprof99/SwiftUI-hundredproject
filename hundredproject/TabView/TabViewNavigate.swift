@@ -11,15 +11,13 @@ struct TabViewNavigate: View {
     @EnvironmentObject var router: Router
     
     var body: some View {
-        NavigationStack(path: $router.navPath) {
-            VStack {
-                Button("Append Router and poproot") {
-                    router.navigate(.simpleoView(text: "Another simpleo"))
-                }
-            }.navigationDestination(for: Destination.self) {
-                if case let .simpleoView(text) = $0 {
-                    ChildNavigationDemoTabView(text: text)
-                }
+        VStack {
+            Button("Append Router and poproot") {
+                router.navigate(.simpleoView(text: "Another simpleo"))
+            }
+        }.navigationDestination(for: Destination.self) {
+            if case let .simpleoView(text) = $0 {
+                ChildNavigationDemoTabView(text: text)
             }
         }
     }

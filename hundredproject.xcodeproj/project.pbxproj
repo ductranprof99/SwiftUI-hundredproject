@@ -65,6 +65,7 @@
 		FAA147C62D13BB1C009848C7 /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */; };
 		FAA147C82D1503DB009848C7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C72D1503DB009848C7 /* Router.swift */; };
 		FAA147CC2D19670C009848C7 /* TabViewNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */; };
+		FAA5FA032D1BE8A30032E033 /* HomeTabViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5FA022D1BE8A30032E033 /* HomeTabViewMain.swift */; };
 		FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */; };
 		FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC22C3CE7B40046D846 /* ContentView.swift */; };
 		FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC42C3CE7B40046D846 /* Assets.xcassets */; };
@@ -126,6 +127,7 @@
 		FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
 		FAA147C72D1503DB009848C7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewNavigate.swift; sourceTree = "<group>"; };
+		FAA5FA022D1BE8A30032E033 /* HomeTabViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewMain.swift; sourceTree = "<group>"; };
 		FAC02CBD2C3CE7B30046D846 /* hundredproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hundredproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hundredprojectApp.swift; sourceTree = "<group>"; };
 		FAC02CC22C3CE7B40046D846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */,
+				FAA5FA022D1BE8A30032E033 /* HomeTabViewMain.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -338,7 +341,7 @@
 			children = (
 				FAA147CA2D1966FA009848C7 /* TabView */,
 				FAA147C52D13BB1C009848C7 /* NavigationStack */,
-				FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp(Next) */,
+				FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp */,
 				FAFF2C202C96841B003EE3B3 /* UIKitChatApp */,
 				FA06514E2C7C689F009F63F4 /* Metal */,
 				FAC002ED2C5A413500946887 /* 2048 */,
@@ -392,14 +395,14 @@
 			path = UIKitChatApp;
 			sourceTree = "<group>";
 		};
-		FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp(Next) */ = {
+		FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp */ = {
 			isa = PBXGroup;
 			children = (
 				FAA147BC2D0F14E5009848C7 /* Helper */,
 				FAA147B72D0C826E009848C7 /* ChatView.swift */,
 				FAA147B92D0C8282009848C7 /* MessageView.swift */,
 			);
-			path = "SwiftUIChatApp(Next)";
+			path = SwiftUIChatApp;
 			sourceTree = "<group>";
 		};
 		FAFF2C282C96893B003EE3B3 /* FormEntry */ = {
@@ -569,6 +572,7 @@
 				FA1B0AFA2D05858C00720EC4 /* renderScence.swift in Sources */,
 				FA1B0AF22D05853200720EC4 /* MetalLesson2.swift in Sources */,
 				FAFF2C3D2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift in Sources */,
+				FAA5FA032D1BE8A30032E033 /* HomeTabViewMain.swift in Sources */,
 				FA07BF182CEACB4E002F98E4 /* TwitterSignup.swift in Sources */,
 				FAFF2C232C968445003EE3B3 /* UIKitChatApp.swift in Sources */,
 				FAA147BE2D0F14F6009848C7 /* BubbleShape.swift in Sources */,

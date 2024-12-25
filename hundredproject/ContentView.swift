@@ -10,29 +10,36 @@ import SwiftUI
 struct ContentView: View {
     @State var selection: Destination? = nil
     @ObservedObject var router = Router()
-    
-    let listView: [Destination] = [
-        .transitionAndBlur,
-        .combineView,
-        .metalLevel1,
-        .chatUIKit,
-        .chatSwiftUI,
-        .navigationBootcampStack
-    ]
-    
+
     var body: some View {
         if #available(iOS 18, *) {
             TabView(selection: $router.selectionTab) {
                 Tab("numba wan", systemImage: "house.fill", value: ContentTab.home) {
-                    tab1
+                    tabHome
                 }
                 Tab("numba choo", systemImage: "arcade.stick.and.arrow.up.and.arrow.down", value: ContentTab.sub1) {
-                    TabViewNavigate()
+                    tab2
+                }
+                Tab("Chat", systemImage: "message.circle", value: ContentTab.chatApp) {
+                    tabChat
                 }
             }.environmentObject(router)
         } else {
             TabView(selection: $router.selectionTab) {
-                tab1
+                tabHome
+                tab2
+                tabChat
+            }.environmentObject(router)
+        }
+        
+    }
+    
+    @ViewBuilder var tabHome: some View {
+        NavigationStack(path: $router.navPath) {
+            if #available(iOS 18, *) {
+                HomeTabViewMain()
+            } else {
+                HomeTabViewMain()
                     .tag(ContentTab.home)
                     .tabItem {
                         Label(title: {
@@ -41,6 +48,15 @@ struct ContentView: View {
                             Image(systemName: "house.fill")
                         })
                     }
+            }
+        }
+    }
+    
+    @ViewBuilder var tab2: some View {
+        NavigationStack(path: $router.navPath) {
+            if #available(iOS 18, *) {
+                TabViewNavigate()
+            } else {
                 TabViewNavigate()
                     .tag(ContentTab.sub1)
                     .tabItem {
@@ -50,38 +66,26 @@ struct ContentView: View {
                             Image(systemName: "tray.and.arrow.down.fill")
                         })
                     }
-            }.environmentObject(router)
-        }
-        
-    }
-    
-    @ViewBuilder var tab1: some View {
-        NavigationStack(path: $router.navPath) {
-            List {
-                ForEach(self.listView) { view in
-                    NavigationLink(value: view){
-                        HStack(alignment: .center) {
-                            Spacer()
-                            Label(
-                                title: { Text(view.buttonName) },
-                                icon: { Image(systemName: "flag.2.crossed") }
-                            )
-                            Spacer()
-                        }
-                        .frame(height: 40, alignment: .center)
-                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(style: StrokeStyle(lineWidth: 2, dash: [1.0])))
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                        .onTapGesture {
-                            FirebaseEventLogging.shared.logging("click", parameters: ["touch": "Tap View inside"])
-                        }
-                    }
-                }
-            }.navigationDestination(for: Destination.self) {
-                if !$0.isSubView {
-                    $0.childNavigationView
-                }
             }
-            .navigationTitle("Navigation")
+        }
+    }
+
+    @ViewBuilder var tabChat: some View {
+        NavigationStack(path: $router.navPath) {
+            if #available(iOS 18, *) {
+                ChatView()
+            } else {
+                ChatView()
+                    .tag(ContentTab.chatApp)
+                    .tabItem {
+                        Label(title: {
+                            Text("numba choo")
+                        }, icon: {
+                            Image(systemName: "message.circle")
+                        })
+                    }
+            }
+            
         }
     }
 }

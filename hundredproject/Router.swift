@@ -11,7 +11,7 @@ import Combine
 enum ContentTab {
     case home
     case sub1
-    case sub2
+    case chatApp
 }
 
 final class Router: ObservableObject {
