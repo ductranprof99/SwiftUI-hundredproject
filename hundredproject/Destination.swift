@@ -50,6 +50,15 @@ public enum Destination: Codable, Hashable, Identifiable {
         }
     }
     
+    var isSubView: Bool {
+        switch self {
+        case .simpleoView:
+            return false
+        default:
+            return true
+        }
+    }
+    
     @ViewBuilder var childNavigationView: some View {
         switch self {
         case .transitionAndBlur:

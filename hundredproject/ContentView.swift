@@ -21,6 +21,41 @@ struct ContentView: View {
     ]
     
     var body: some View {
+        if #available(iOS 18, *) {
+            TabView(selection: $router.selectionTab) {
+                Tab("numba wan", systemImage: "house.fill", value: ContentTab.home) {
+                    tab1
+                }
+                Tab("numba choo", systemImage: "arcade.stick.and.arrow.up.and.arrow.down", value: ContentTab.sub1) {
+                    TabViewNavigate()
+                }
+            }.environmentObject(router)
+        } else {
+            TabView(selection: $router.selectionTab) {
+                tab1
+                    .tag(ContentTab.home)
+                    .tabItem {
+                        Label(title: {
+                            Text("numba wan")
+                        }, icon: {
+                            Image(systemName: "house.fill")
+                        })
+                    }
+                TabViewNavigate()
+                    .tag(ContentTab.sub1)
+                    .tabItem {
+                        Label(title: {
+                            Text("numba choo")
+                        }, icon: {
+                            Image(systemName: "tray.and.arrow.down.fill")
+                        })
+                    }
+            }.environmentObject(router)
+        }
+        
+    }
+    
+    @ViewBuilder var tab1: some View {
         NavigationStack(path: $router.navPath) {
             List {
                 ForEach(self.listView) { view in
@@ -42,11 +77,12 @@ struct ContentView: View {
                     }
                 }
             }.navigationDestination(for: Destination.self) {
-                $0.childNavigationView
+                if !$0.isSubView {
+                    $0.childNavigationView
+                }
             }
             .navigationTitle("Navigation")
-        }.environmentObject(router)
-        
+        }
     }
 }
 

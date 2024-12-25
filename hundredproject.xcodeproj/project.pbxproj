@@ -64,6 +64,7 @@
 		FAA147C02D1134DE009848C7 /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */; };
 		FAA147C62D13BB1C009848C7 /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */; };
 		FAA147C82D1503DB009848C7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C72D1503DB009848C7 /* Router.swift */; };
+		FAA147CC2D19670C009848C7 /* TabViewNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */; };
 		FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */; };
 		FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC22C3CE7B40046D846 /* ContentView.swift */; };
 		FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC42C3CE7B40046D846 /* Assets.xcassets */; };
@@ -124,6 +125,7 @@
 		FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
 		FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
 		FAA147C72D1503DB009848C7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewNavigate.swift; sourceTree = "<group>"; };
 		FAC02CBD2C3CE7B30046D846 /* hundredproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hundredproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hundredprojectApp.swift; sourceTree = "<group>"; };
 		FAC02CC22C3CE7B40046D846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,7 +146,7 @@
 		FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewWrapper.swift; sourceTree = "<group>"; };
 		FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnector.swift; sourceTree = "<group>"; };
 		FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitChatSaveInfo.swift; sourceTree = "<group>"; };
-		FAFF2C3E2C973516003EE3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAFF2C3E2C973516003EE3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFF2C422C975DA6003EE3B3 /* ChatMessageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +251,7 @@
 		FA28C1882C68B865000464A1 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				FAFF2C3E2C973516003EE3B3 /* Info.plist */,
 				FA28C1862C68B859000464A1 /* GoogleService-Info.plist */,
 			);
 			path = Plist;
@@ -294,6 +297,14 @@
 			path = NavigationStack;
 			sourceTree = "<group>";
 		};
+		FAA147CA2D1966FA009848C7 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		FAC002ED2C5A413500946887 /* 2048 */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,7 +336,7 @@
 		FAC02CBF2C3CE7B30046D846 /* hundredproject */ = {
 			isa = PBXGroup;
 			children = (
-				FAFF2C3E2C973516003EE3B3 /* Info.plist */,
+				FAA147CA2D1966FA009848C7 /* TabView */,
 				FAA147C52D13BB1C009848C7 /* NavigationStack */,
 				FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp(Next) */,
 				FAFF2C202C96841B003EE3B3 /* UIKitChatApp */,
@@ -565,6 +576,7 @@
 				FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */,
 				FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */,
 				FAA147C02D1134DE009848C7 /* LoadMoreView.swift in Sources */,
+				FAA147CC2D19670C009848C7 /* TabViewNavigate.swift in Sources */,
 				FAFF2C302C96D4FB003EE3B3 /* ChatDetailViewController.swift in Sources */,
 				FAA147C82D1503DB009848C7 /* Router.swift in Sources */,
 				FA07BF2C2CEAF2D3002F98E4 /* AsyncButton.swift in Sources */,
@@ -713,7 +725,7 @@
 				DEVELOPMENT_TEAM = M494F4824Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = hundredproject/Info.plist;
+				INFOPLIST_FILE = Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -744,7 +756,7 @@
 				DEVELOPMENT_TEAM = M494F4824Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = hundredproject/Info.plist;
+				INFOPLIST_FILE = Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

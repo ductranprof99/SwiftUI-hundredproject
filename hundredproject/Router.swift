@@ -8,8 +8,15 @@
 import SwiftUI
 import Combine
 
+enum ContentTab {
+    case home
+    case sub1
+    case sub2
+}
+
 final class Router: ObservableObject {
     @Published var navPath = NavigationPath()
+    @Published var selectionTab: ContentTab = .home
     
     func navigate(_ destinations: Destination...) {
         destinations.forEach { destination in
@@ -21,7 +28,7 @@ final class Router: ObservableObject {
         navPath.removeLast()
     }
     
-    func navigateToRoot(isGrand: Bool = false) {
+    func navigateToRoot() {
         navPath.removeLast(navPath.count)
     }
     

@@ -49,7 +49,12 @@ struct NavigationStackBootcamp: View {
             }).navigationDestination(for: String.self,
                                      destination: { strVal in
                 Text(strVal)
-            }).onAppear {
+            }).navigationDestination(for: Destination.self) {
+                if case let .simpleoView(text) = $0 {
+                    Text(text)
+                }
+            }
+            .onAppear {
                 FirebaseEventLogging.shared.loggingScreen(.navigationBootcampStack)
             }
     }
