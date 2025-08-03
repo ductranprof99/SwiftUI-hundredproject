@@ -16,6 +16,7 @@ public enum Destination: Codable, Hashable, Identifiable {
     case chatUIKit
     case chatSwiftUI
     case navigationBootcampStack
+    case bluetooth
     
     // Simple view
     case simpleoView(text: String)
@@ -45,6 +46,8 @@ public enum Destination: Codable, Hashable, Identifiable {
             return "Nav bootcamp"
         case .dummy:
             return "Dummy page"
+        case .bluetooth:
+            return "Bluetooth"
         default:
             return ""
         }
@@ -77,6 +80,8 @@ public enum Destination: Codable, Hashable, Identifiable {
             ChatView()
         case .navigationBootcampStack:
             NavigationStackBootcamp()
+        case .bluetooth:
+            BluetoothContactView()
         default:
             EmptyView()
         }

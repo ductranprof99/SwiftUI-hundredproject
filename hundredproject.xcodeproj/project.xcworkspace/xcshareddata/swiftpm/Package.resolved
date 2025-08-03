@@ -1,13 +1,13 @@
 {
-  "originHash" : "b5eaa197e77cd093c08bbe403ec8b066000aba44865f7c6e2eda604caf61e945",
+  "originHash" : "ae73491970f83694377447182a18a76028ecec0320fd128c5e152ea8ef13d20c",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/abseil-cpp-binary.git",
       "state" : {
-        "revision" : "194a6706acbd25e4ef639bcaddea16e8758a3e27",
-        "version" : "1.2024011602.0"
+        "revision" : "bbe8b69694d7873315fd3a4ad41efe043e1c07c5",
+        "version" : "1.2024072200.0"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/app-check.git",
       "state" : {
-        "revision" : "21fe1af9be463a359aaf8d96789ef73fc3760d09",
-        "version" : "11.0.1"
+        "revision" : "61b85103a1aeed8218f17c794687781505fbbef5",
+        "version" : "11.2.0"
       }
     },
     {
@@ -24,8 +24,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk",
       "state" : {
-        "revision" : "a5c253d1b4409eb8aef4346015ba000f9935cb2d",
-        "version" : "11.0.0"
+        "revision" : "fdc352fabaf5916e7faa1f96ad02b1957e93e5a5",
+        "version" : "11.15.0"
+      }
+    },
+    {
+      "identity" : "google-ads-on-device-conversion-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/google-ads-on-device-conversion-ios-sdk",
+      "state" : {
+        "revision" : "973bd67929bfbe465f63c05cd5a4b113765fbc7f",
+        "version" : "2.2.1"
       }
     },
     {
@@ -33,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "ca30c987b732d130732fb60b071e0b655a85ada7",
-        "version" : "11.0.0"
+        "revision" : "45ce435e9406d3c674dd249a042b932bee006f60",
+        "version" : "11.15.0"
       }
     },
     {
@@ -51,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleUtilities.git",
       "state" : {
-        "revision" : "66dd81c729364b0425d0c2b73e38a489f32b1717",
-        "version" : "8.0.1"
+        "revision" : "60da361632d0de02786f709bdc0c4df340f7613e",
+        "version" : "8.1.0"
       }
     },
     {
@@ -60,8 +69,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/grpc-binary.git",
       "state" : {
-        "revision" : "f56d8fc3162de9a498377c7b6cea43431f4f5083",
-        "version" : "1.65.1"
+        "revision" : "cc0001a0cf963aa40501d9c2b181e7fc9fd8ec71",
+        "version" : "1.69.0"
       }
     },
     {
@@ -69,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/gtm-session-fetcher.git",
       "state" : {
-        "revision" : "a2ab612cb980066ee56d90d60d8462992c07f24b",
-        "version" : "3.5.0"
+        "revision" : "c756a29784521063b6a1202907e2cc47f41b667c",
+        "version" : "4.5.0"
       }
     },
     {
@@ -78,8 +87,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nathantannar4/InputBarAccessoryView",
       "state" : {
-        "revision" : "093bdc71dc26bfcdaa71352d5ff0cd84b9b8d427",
-        "version" : "6.4.0"
+        "revision" : "c7acd5fa32e54cd7a44ad7eb9a7730da35b54c95",
+        "version" : "6.5.1"
       }
     },
     {
@@ -87,8 +96,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/interop-ios-for-google-sdks.git",
       "state" : {
-        "revision" : "2d12673670417654f08f5f90fdd62926dc3a2648",
-        "version" : "100.0.0"
+        "revision" : "040d087ac2267d2ddd4cca36c757d1c6a05fdbfe",
+        "version" : "101.0.0"
       }
     },
     {
@@ -105,8 +114,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MessageKit/MessageKit",
       "state" : {
-        "revision" : "1993e8e90d4e9a61b8d9bc8ceb733964ce943376",
-        "version" : "4.2.0"
+        "revision" : "b024c1287ac30fb6ea2ee07169e6193efc11d972",
+        "version" : "4.3.0"
       }
     },
     {
@@ -133,7 +142,7 @@
       "location" : "https://github.com/socketio/socket.io-client-swift",
       "state" : {
         "branch" : "master",
-        "revision" : "175da8b5156f6b132436f0676cc84c2f6a766b6e"
+        "revision" : "42da871d9369f290d6ec4930636c40672143905b"
       }
     },
     {
@@ -141,8 +150,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/daltoniam/Starscream",
       "state" : {
-        "revision" : "ac6c0fc9da221873e01bd1a0d4818498a71eef33",
-        "version" : "4.0.6"
+        "revision" : "c6bfd1af48efcc9a9ad203665db12375ba6b145a",
+        "version" : "4.0.8"
       }
     },
     {
@@ -150,8 +159,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-protobuf.git",
       "state" : {
-        "revision" : "e17d61f26df0f0e06f58f6977ba05a097a720106",
-        "version" : "1.27.1"
+        "revision" : "102a647b573f60f73afdce5613a51d71349fe507",
+        "version" : "1.30.0"
       }
     }
   ],

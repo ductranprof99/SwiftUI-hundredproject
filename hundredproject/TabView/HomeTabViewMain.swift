@@ -16,7 +16,8 @@ struct HomeTabViewMain: View {
         .metalLevel1,
         .chatUIKit,
         .chatSwiftUI,
-        .navigationBootcampStack
+        .navigationBootcampStack,
+        .bluetooth
     ]
     
     
@@ -36,14 +37,13 @@ struct HomeTabViewMain: View {
                     .overlay(RoundedRectangle(cornerRadius: 20).stroke(style: StrokeStyle(lineWidth: 2, dash: [1.0])))
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .onTapGesture {
+                        router.navigate(view)
                         FirebaseEventLogging.shared.logging("click", parameters: ["touch": "Tap View inside"])
                     }
                 }
             }
         }.navigationDestination(for: Destination.self) {
-            if !$0.isSubView {
-                $0.childNavigationView
-            }
+            $0.childNavigationView
         }
         .navigationTitle("Navigation")
     }

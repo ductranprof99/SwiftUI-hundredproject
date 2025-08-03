@@ -3,33 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */; };
-		FA0651532C7C6EE2009F63F4 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0651522C7C6EE2009F63F4 /* Renderer.swift */; };
-		FA07BF182CEACB4E002F98E4 /* TwitterSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF172CEACB4E002F98E4 /* TwitterSignup.swift */; };
-		FA07BF1A2CEACB5D002F98E4 /* X+String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF192CEACB5D002F98E4 /* X+String++.swift */; };
-		FA07BF1C2CEACB8A002F98E4 /* X+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF1B2CEACB8A002F98E4 /* X+Auth.swift */; };
-		FA07BF202CEAE743002F98E4 /* X.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF1F2CEAE743002F98E4 /* X.swift */; };
-		FA07BF222CEAE775002F98E4 /* X+OAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF212CEAE775002F98E4 /* X+OAuthHelper.swift */; };
-		FA07BF242CEAE7C1002F98E4 /* X+OAuthCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF232CEAE7C1002F98E4 /* X+OAuthCredentials.swift */; };
-		FA07BF262CEAE7F8002F98E4 /* X+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF252CEAE7F8002F98E4 /* X+Error.swift */; };
-		FA07BF282CEAEE59002F98E4 /* X+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF272CEAEE59002F98E4 /* X+Route.swift */; };
-		FA07BF2C2CEAF2D3002F98E4 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF2B2CEAF2D3002F98E4 /* AsyncButton.swift */; };
-		FA07BF302CEAF620002F98E4 /* X+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF2F2CEAF620002F98E4 /* X+Methods.swift */; };
-		FA07BF322CEAF64B002F98E4 /* X+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF312CEAF64B002F98E4 /* X+User.swift */; };
-		FA07BF342CEAF9B1002F98E4 /* X+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF332CEAF9B1002F98E4 /* X+Post.swift */; };
-		FA07BF362CEAFBAD002F98E4 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BF352CEAFBAD002F98E4 /* KeychainError.swift */; };
-		FA1B0AF22D05853200720EC4 /* MetalLesson2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AF12D05853200720EC4 /* MetalLesson2.swift */; };
-		FA1B0AF62D05857500720EC4 /* camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AF52D05857500720EC4 /* camera.swift */; };
-		FA1B0AF82D05857E00720EC4 /* simpleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AF72D05857E00720EC4 /* simpleComponent.swift */; };
-		FA1B0AFA2D05858C00720EC4 /* renderScence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AF92D05858C00720EC4 /* renderScence.swift */; };
-		FA1B0AFC2D05883400720EC4 /* TriangleMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AFB2D05883400720EC4 /* TriangleMesh.swift */; };
-		FA1B0AFE2D05885E00720EC4 /* LinearAlgebro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AFD2D05885E00720EC4 /* LinearAlgebro.swift */; };
-		FA1B0B002D05889300720EC4 /* RendererLessson2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B0AFF2D05889300720EC4 /* RendererLessson2.swift */; };
-		FA28C1872C68B859000464A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA28C1862C68B859000464A1 /* GoogleService-Info.plist */; };
 		FA28C18C2C68BBE5000464A1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18B2C68BBE5000464A1 /* FirebaseAnalytics */; };
 		FA28C18E2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18D2C68BBE5000464A1 /* FirebaseAnalyticsOnDeviceConversion */; };
 		FA28C1902C68BBE5000464A1 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C18F2C68BBE5000464A1 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -51,113 +28,35 @@
 		FA28C1B02C68BBE5000464A1 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C1AF2C68BBE5000464A1 /* FirebasePerformance */; };
 		FA28C1B22C68BBE5000464A1 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C1B12C68BBE5000464A1 /* FirebaseRemoteConfig */; };
 		FA28C1B42C68BBE5000464A1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C1B32C68BBE5000464A1 /* FirebaseStorage */; };
-		FA28C1B62C68BBE5000464A1 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C1B52C68BBE5000464A1 /* FirebaseStorageCombine-Community */; };
-		FA28C1B82C68BBE6000464A1 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = FA28C1B72C68BBE6000464A1 /* FirebaseVertexAI-Preview */; };
-		FA28C1BB2C68C105000464A1 /* FirebaseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28C1BA2C68C105000464A1 /* FirebaseLog.swift */; };
-		FA346CE72CFAFEF000300030 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = FA346CE62CFAFEF000300030 /* Shader.metal */; };
-		FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */; };
-		FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77D42C2C48F38E00F8220D /* SlipperCard.swift */; };
-		FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */; };
-		FAA147B82D0C826E009848C7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147B72D0C826E009848C7 /* ChatView.swift */; };
-		FAA147BA2D0C8282009848C7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147B92D0C8282009848C7 /* MessageView.swift */; };
-		FAA147BE2D0F14F6009848C7 /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147BD2D0F14F6009848C7 /* BubbleShape.swift */; };
-		FAA147C02D1134DE009848C7 /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */; };
-		FAA147C62D13BB1C009848C7 /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */; };
-		FAA147C82D1503DB009848C7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147C72D1503DB009848C7 /* Router.swift */; };
-		FAA147CC2D19670C009848C7 /* TabViewNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */; };
-		FAA5FA032D1BE8A30032E033 /* HomeTabViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5FA022D1BE8A30032E033 /* HomeTabViewMain.swift */; };
-		FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */; };
-		FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CC22C3CE7B40046D846 /* ContentView.swift */; };
-		FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC42C3CE7B40046D846 /* Assets.xcassets */; };
-		FAC02CC82C3CE7B40046D846 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC02CC72C3CE7B40046D846 /* Preview Assets.xcassets */; };
-		FAC02CCF2C3CE86C0046D846 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CCE2C3CE86C0046D846 /* Destination.swift */; };
-		FAC02CD42C3CEB820046D846 /* ContentViewButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02CD32C3CEB820046D846 /* ContentViewButtonStyle.swift */; };
-		FAD649592C5E31390025775F /* GameMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD649582C5E31390025775F /* GameMainView.swift */; };
-		FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD6495B2C5E35A20025775F /* Matrix.swift */; };
-		FAD6495E2C5E35B90025775F /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD6495D2C5E35B90025775F /* GameManager.swift */; };
-		FAFF2C232C968445003EE3B3 /* UIKitChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C222C968445003EE3B3 /* UIKitChatApp.swift */; };
-		FAFF2C262C968935003EE3B3 /* ChatAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2C252C968935003EE3B3 /* ChatAppViewController.xib */; };
-		FAFF2C272C968935003EE3B3 /* ChatAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C242C968935003EE3B3 /* ChatAppViewController.swift */; };
-		FAFF2C2A2C96D386003EE3B3 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C292C96D386003EE3B3 /* ConnectionManager.swift */; };
-		FAFF2C2F2C96D4FB003EE3B3 /* ChatDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFF2C2E2C96D4FB003EE3B3 /* ChatDetailViewController.xib */; };
-		FAFF2C302C96D4FB003EE3B3 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C2D2C96D4FB003EE3B3 /* ChatDetailViewController.swift */; };
-		FAFF2C342C96D7A8003EE3B3 /* ChatDetailViewHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C332C96D7A8003EE3B3 /* ChatDetailViewHost.swift */; };
-		FAFF2C362C96DB04003EE3B3 /* UIKitViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */; };
 		FAFF2C392C96DFDF003EE3B3 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = FAFF2C382C96DFDF003EE3B3 /* SocketIO */; };
-		FAFF2C3B2C96F41E003EE3B3 /* SocketConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */; };
-		FAFF2C3D2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */; };
 		FAFF2C412C975995003EE3B3 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAFF2C402C975995003EE3B3 /* MessageKit */; };
-		FAFF2C432C975DA6003EE3B3 /* ChatMessageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2C422C975DA6003EE3B3 /* ChatMessageModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLesson1.swift; sourceTree = "<group>"; };
-		FA0651522C7C6EE2009F63F4 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		FA07BF172CEACB4E002F98E4 /* TwitterSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSignup.swift; sourceTree = "<group>"; };
-		FA07BF192CEACB5D002F98E4 /* X+String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+String++.swift"; sourceTree = "<group>"; };
-		FA07BF1B2CEACB8A002F98E4 /* X+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Auth.swift"; sourceTree = "<group>"; };
-		FA07BF1F2CEAE743002F98E4 /* X.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X.swift; sourceTree = "<group>"; };
-		FA07BF212CEAE775002F98E4 /* X+OAuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+OAuthHelper.swift"; sourceTree = "<group>"; };
-		FA07BF232CEAE7C1002F98E4 /* X+OAuthCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+OAuthCredentials.swift"; sourceTree = "<group>"; };
-		FA07BF252CEAE7F8002F98E4 /* X+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Error.swift"; sourceTree = "<group>"; };
-		FA07BF272CEAEE59002F98E4 /* X+Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Route.swift"; sourceTree = "<group>"; };
-		FA07BF2B2CEAF2D3002F98E4 /* AsyncButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
-		FA07BF2F2CEAF620002F98E4 /* X+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Methods.swift"; sourceTree = "<group>"; };
-		FA07BF312CEAF64B002F98E4 /* X+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+User.swift"; sourceTree = "<group>"; };
-		FA07BF332CEAF9B1002F98E4 /* X+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "X+Post.swift"; sourceTree = "<group>"; };
-		FA07BF352CEAFBAD002F98E4 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
-		FA1B0AF12D05853200720EC4 /* MetalLesson2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLesson2.swift; sourceTree = "<group>"; };
-		FA1B0AF52D05857500720EC4 /* camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera.swift; sourceTree = "<group>"; };
-		FA1B0AF72D05857E00720EC4 /* simpleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleComponent.swift; sourceTree = "<group>"; };
-		FA1B0AF92D05858C00720EC4 /* renderScence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = renderScence.swift; sourceTree = "<group>"; };
-		FA1B0AFB2D05883400720EC4 /* TriangleMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleMesh.swift; sourceTree = "<group>"; };
-		FA1B0AFD2D05885E00720EC4 /* LinearAlgebro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearAlgebro.swift; sourceTree = "<group>"; };
-		FA1B0AFF2D05889300720EC4 /* RendererLessson2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererLessson2.swift; sourceTree = "<group>"; };
-		FA28C1862C68B859000464A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FA28C1BA2C68C105000464A1 /* FirebaseLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLog.swift; sourceTree = "<group>"; };
-		FA346CE52CFAFAA800300030 /* definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
-		FA346CE62CFAFEF000300030 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
-		FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAndBlur.swift; sourceTree = "<group>"; };
-		FA77D42C2C48F38E00F8220D /* SlipperCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipperCard.swift; sourceTree = "<group>"; };
-		FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewPage.swift; sourceTree = "<group>"; };
-		FAA147B72D0C826E009848C7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		FAA147B92D0C8282009848C7 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		FAA147BD2D0F14F6009848C7 /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
-		FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
-		FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
-		FAA147C72D1503DB009848C7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewNavigate.swift; sourceTree = "<group>"; };
-		FAA5FA022D1BE8A30032E033 /* HomeTabViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewMain.swift; sourceTree = "<group>"; };
 		FAC02CBD2C3CE7B30046D846 /* hundredproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hundredproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hundredprojectApp.swift; sourceTree = "<group>"; };
-		FAC02CC22C3CE7B40046D846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FAC02CC42C3CE7B40046D846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAC02CC72C3CE7B40046D846 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FAC02CCE2C3CE86C0046D846 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
-		FAC02CD32C3CEB820046D846 /* ContentViewButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewButtonStyle.swift; sourceTree = "<group>"; };
-		FAD649582C5E31390025775F /* GameMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMainView.swift; sourceTree = "<group>"; };
-		FAD6495B2C5E35A20025775F /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
-		FAD6495D2C5E35B90025775F /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
-		FAFF2C222C968445003EE3B3 /* UIKitChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitChatApp.swift; sourceTree = "<group>"; };
-		FAFF2C242C968935003EE3B3 /* ChatAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppViewController.swift; sourceTree = "<group>"; };
-		FAFF2C252C968935003EE3B3 /* ChatAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatAppViewController.xib; sourceTree = "<group>"; };
-		FAFF2C292C96D386003EE3B3 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
-		FAFF2C2D2C96D4FB003EE3B3 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
-		FAFF2C2E2C96D4FB003EE3B3 /* ChatDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatDetailViewController.xib; sourceTree = "<group>"; };
-		FAFF2C332C96D7A8003EE3B3 /* ChatDetailViewHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewHost.swift; sourceTree = "<group>"; };
-		FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewWrapper.swift; sourceTree = "<group>"; };
-		FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnector.swift; sourceTree = "<group>"; };
-		FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitChatSaveInfo.swift; sourceTree = "<group>"; };
-		FAFF2C3E2C973516003EE3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFF2C422C975DA6003EE3B3 /* ChatMessageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FA113D882E3FA3A50002878A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = FAC02CBC2C3CE7B30046D846 /* hundredproject */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FA113D012E3FA3220002878A /* hundredProject */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = hundredProject; sourceTree = "<group>"; };
+		FA113D822E3FA3A50002878A /* Analytics */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Analytics; sourceTree = "<group>"; };
+		FA113D852E3FA3A50002878A /* Plist */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (FA113D882E3FA3A50002878A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Plist; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FAC02CBA2C3CE7B30046D846 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA28C1B62C68BBE5000464A1 /* FirebaseStorageCombine-Community in Frameworks */,
 				FA28C1922C68BBE5000464A1 /* FirebaseAppCheck in Frameworks */,
 				FA28C1962C68BBE5000464A1 /* FirebaseAuth in Frameworks */,
 				FA28C18C2C68BBE5000464A1 /* FirebaseAnalytics in Frameworks */,
@@ -180,7 +79,6 @@
 				FA28C1AE2C68BBE5000464A1 /* FirebaseMLModelDownloader in Frameworks */,
 				FA28C19E2C68BBE5000464A1 /* FirebaseDynamicLinks in Frameworks */,
 				FA28C1A82C68BBE5000464A1 /* FirebaseInAppMessaging-Beta in Frameworks */,
-				FA28C1B82C68BBE6000464A1 /* FirebaseVertexAI-Preview in Frameworks */,
 				FA28C1B22C68BBE5000464A1 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,77 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA06514E2C7C689F009F63F4 /* Metal */ = {
-			isa = PBXGroup;
-			children = (
-				FA346CE52CFAFAA800300030 /* definitions.h */,
-				FA346CE62CFAFEF000300030 /* Shader.metal */,
-				FA06514F2C7C68AB009F63F4 /* Lesson1 */,
-				FA1B0AF02D05850B00720EC4 /* Lesson2 */,
-			);
-			path = Metal;
-			sourceTree = "<group>";
-		};
-		FA06514F2C7C68AB009F63F4 /* Lesson1 */ = {
-			isa = PBXGroup;
-			children = (
-				FA0651502C7C69D4009F63F4 /* MetalLesson1.swift */,
-				FA0651522C7C6EE2009F63F4 /* Renderer.swift */,
-			);
-			path = Lesson1;
-			sourceTree = "<group>";
-		};
-		FA07BF162CEACB23002F98E4 /* TwitterSignup */ = {
-			isa = PBXGroup;
-			children = (
-				FA07BF352CEAFBAD002F98E4 /* KeychainError.swift */,
-				FA07BF172CEACB4E002F98E4 /* TwitterSignup.swift */,
-				FA07BF2B2CEAF2D3002F98E4 /* AsyncButton.swift */,
-				FA07BF192CEACB5D002F98E4 /* X+String++.swift */,
-				FA07BF272CEAEE59002F98E4 /* X+Route.swift */,
-				FA07BF2F2CEAF620002F98E4 /* X+Methods.swift */,
-				FA07BF252CEAE7F8002F98E4 /* X+Error.swift */,
-				FA07BF232CEAE7C1002F98E4 /* X+OAuthCredentials.swift */,
-				FA07BF212CEAE775002F98E4 /* X+OAuthHelper.swift */,
-				FA07BF312CEAF64B002F98E4 /* X+User.swift */,
-				FA07BF332CEAF9B1002F98E4 /* X+Post.swift */,
-				FA07BF1B2CEACB8A002F98E4 /* X+Auth.swift */,
-				FA07BF1F2CEAE743002F98E4 /* X.swift */,
-			);
-			path = TwitterSignup;
-			sourceTree = "<group>";
-		};
-		FA1B0AF02D05850B00720EC4 /* Lesson2 */ = {
-			isa = PBXGroup;
-			children = (
-				FA1B0AF32D05855D00720EC4 /* Model */,
-				FA1B0AF12D05853200720EC4 /* MetalLesson2.swift */,
-				FA1B0AFB2D05883400720EC4 /* TriangleMesh.swift */,
-				FA1B0AFD2D05885E00720EC4 /* LinearAlgebro.swift */,
-				FA1B0AFF2D05889300720EC4 /* RendererLessson2.swift */,
-			);
-			path = Lesson2;
-			sourceTree = "<group>";
-		};
-		FA1B0AF32D05855D00720EC4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FA1B0AF52D05857500720EC4 /* camera.swift */,
-				FA1B0AF72D05857E00720EC4 /* simpleComponent.swift */,
-				FA1B0AF92D05858C00720EC4 /* renderScence.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FA28C1882C68B865000464A1 /* Plist */ = {
-			isa = PBXGroup;
-			children = (
-				FAFF2C3E2C973516003EE3B3 /* Info.plist */,
-				FA28C1862C68B859000464A1 /* GoogleService-Info.plist */,
-			);
-			path = Plist;
-			sourceTree = "<group>";
-		};
 		FA28C18A2C68BBDD000464A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,63 +93,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA28C1B92C68BC49000464A1 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				FA28C1BA2C68C105000464A1 /* FirebaseLog.swift */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		FA7C07972C4E40B0004C7638 /* CombineView */ = {
-			isa = PBXGroup;
-			children = (
-				FA7C07982C4E41E7004C7638 /* CombineViewPage.swift */,
-			);
-			path = CombineView;
-			sourceTree = "<group>";
-		};
-		FAA147BC2D0F14E5009848C7 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				FAA147BD2D0F14F6009848C7 /* BubbleShape.swift */,
-				FAA147BF2D1134DE009848C7 /* LoadMoreView.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		FAA147C52D13BB1C009848C7 /* NavigationStack */ = {
-			isa = PBXGroup;
-			children = (
-				FAA147C42D13BB1C009848C7 /* NavigationStackBootcamp.swift */,
-			);
-			path = NavigationStack;
-			sourceTree = "<group>";
-		};
-		FAA147CA2D1966FA009848C7 /* TabView */ = {
-			isa = PBXGroup;
-			children = (
-				FAA147CB2D19670C009848C7 /* TabViewNavigate.swift */,
-				FAA5FA022D1BE8A30032E033 /* HomeTabViewMain.swift */,
-			);
-			path = TabView;
-			sourceTree = "<group>";
-		};
-		FAC002ED2C5A413500946887 /* 2048 */ = {
-			isa = PBXGroup;
-			children = (
-				FAD6495A2C5E35880025775F /* GameLogic */,
-				FAD649582C5E31390025775F /* GameMainView.swift */,
-			);
-			path = 2048;
-			sourceTree = "<group>";
-		};
 		FAC02CB42C3CE7B30046D846 = {
 			isa = PBXGroup;
 			children = (
-				FA28C1B92C68BC49000464A1 /* Analytics */,
-				FA28C1882C68B865000464A1 /* Plist */,
-				FAC02CBF2C3CE7B30046D846 /* hundredproject */,
+				FA113D822E3FA3A50002878A /* Analytics */,
+				FA113D852E3FA3A50002878A /* Plist */,
+				FA113D012E3FA3220002878A /* hundredProject */,
 				FAC02CBE2C3CE7B30046D846 /* Products */,
 				FA28C18A2C68BBDD000464A1 /* Frameworks */,
 			);
@@ -334,107 +110,6 @@
 				FAC02CBD2C3CE7B30046D846 /* hundredproject.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FAC02CBF2C3CE7B30046D846 /* hundredproject */ = {
-			isa = PBXGroup;
-			children = (
-				FAA147CA2D1966FA009848C7 /* TabView */,
-				FAA147C52D13BB1C009848C7 /* NavigationStack */,
-				FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp */,
-				FAFF2C202C96841B003EE3B3 /* UIKitChatApp */,
-				FA06514E2C7C689F009F63F4 /* Metal */,
-				FAC002ED2C5A413500946887 /* 2048 */,
-				FA7C07972C4E40B0004C7638 /* CombineView */,
-				FAC02CD02C3CE9250046D846 /* TransitionAndBlur */,
-				FA07BF162CEACB23002F98E4 /* TwitterSignup */,
-				FAC02CC02C3CE7B40046D846 /* hundredprojectApp.swift */,
-				FAC02CC22C3CE7B40046D846 /* ContentView.swift */,
-				FAC02CD32C3CEB820046D846 /* ContentViewButtonStyle.swift */,
-				FAA147C72D1503DB009848C7 /* Router.swift */,
-				FAC02CCE2C3CE86C0046D846 /* Destination.swift */,
-				FAC02CC42C3CE7B40046D846 /* Assets.xcassets */,
-				FAC02CC62C3CE7B40046D846 /* Preview Content */,
-			);
-			path = hundredproject;
-			sourceTree = "<group>";
-		};
-		FAC02CC62C3CE7B40046D846 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FAC02CC72C3CE7B40046D846 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FAC02CD02C3CE9250046D846 /* TransitionAndBlur */ = {
-			isa = PBXGroup;
-			children = (
-				FA77D42A2C476FC700F8220D /* TransitionAndBlur.swift */,
-				FA77D42C2C48F38E00F8220D /* SlipperCard.swift */,
-			);
-			path = TransitionAndBlur;
-			sourceTree = "<group>";
-		};
-		FAD6495A2C5E35880025775F /* GameLogic */ = {
-			isa = PBXGroup;
-			children = (
-				FAD6495B2C5E35A20025775F /* Matrix.swift */,
-				FAD6495D2C5E35B90025775F /* GameManager.swift */,
-			);
-			path = GameLogic;
-			sourceTree = "<group>";
-		};
-		FAFF2C202C96841B003EE3B3 /* UIKitChatApp */ = {
-			isa = PBXGroup;
-			children = (
-				FAFF2C322C96D787003EE3B3 /* Utils */,
-				FAFF2C312C96D76C003EE3B3 /* ChatDetail */,
-				FAFF2C282C96893B003EE3B3 /* FormEntry */,
-			);
-			path = UIKitChatApp;
-			sourceTree = "<group>";
-		};
-		FAFF2C212C96842A003EE3B3 /* SwiftUIChatApp */ = {
-			isa = PBXGroup;
-			children = (
-				FAA147BC2D0F14E5009848C7 /* Helper */,
-				FAA147B72D0C826E009848C7 /* ChatView.swift */,
-				FAA147B92D0C8282009848C7 /* MessageView.swift */,
-			);
-			path = SwiftUIChatApp;
-			sourceTree = "<group>";
-		};
-		FAFF2C282C96893B003EE3B3 /* FormEntry */ = {
-			isa = PBXGroup;
-			children = (
-				FAFF2C222C968445003EE3B3 /* UIKitChatApp.swift */,
-				FAFF2C242C968935003EE3B3 /* ChatAppViewController.swift */,
-				FAFF2C252C968935003EE3B3 /* ChatAppViewController.xib */,
-			);
-			path = FormEntry;
-			sourceTree = "<group>";
-		};
-		FAFF2C312C96D76C003EE3B3 /* ChatDetail */ = {
-			isa = PBXGroup;
-			children = (
-				FAFF2C2D2C96D4FB003EE3B3 /* ChatDetailViewController.swift */,
-				FAFF2C2E2C96D4FB003EE3B3 /* ChatDetailViewController.xib */,
-				FAFF2C332C96D7A8003EE3B3 /* ChatDetailViewHost.swift */,
-			);
-			path = ChatDetail;
-			sourceTree = "<group>";
-		};
-		FAFF2C322C96D787003EE3B3 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				FAFF2C292C96D386003EE3B3 /* ConnectionManager.swift */,
-				FAFF2C352C96DB04003EE3B3 /* UIKitViewWrapper.swift */,
-				FAFF2C3A2C96F41E003EE3B3 /* SocketConnector.swift */,
-				FAFF2C3C2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift */,
-				FAFF2C422C975DA6003EE3B3 /* ChatMessageModels.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +126,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FA113D012E3FA3220002878A /* hundredProject */,
+				FA113D822E3FA3A50002878A /* Analytics */,
 			);
 			name = hundredproject;
 			packageProductDependencies = (
@@ -475,8 +154,6 @@
 				FA28C1AF2C68BBE5000464A1 /* FirebasePerformance */,
 				FA28C1B12C68BBE5000464A1 /* FirebaseRemoteConfig */,
 				FA28C1B32C68BBE5000464A1 /* FirebaseStorage */,
-				FA28C1B52C68BBE5000464A1 /* FirebaseStorageCombine-Community */,
-				FA28C1B72C68BBE6000464A1 /* FirebaseVertexAI-Preview */,
 				FAFF2C382C96DFDF003EE3B3 /* SocketIO */,
 				FAFF2C402C975995003EE3B3 /* MessageKit */,
 			);
@@ -527,11 +204,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFF2C2F2C96D4FB003EE3B3 /* ChatDetailViewController.xib in Resources */,
-				FAC02CC82C3CE7B40046D846 /* Preview Assets.xcassets in Resources */,
-				FAC02CC52C3CE7B40046D846 /* Assets.xcassets in Resources */,
-				FAFF2C262C968935003EE3B3 /* ChatAppViewController.xib in Resources */,
-				FA28C1872C68B859000464A1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,57 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC02CD42C3CEB820046D846 /* ContentViewButtonStyle.swift in Sources */,
-				FA07BF362CEAFBAD002F98E4 /* KeychainError.swift in Sources */,
-				FA07BF302CEAF620002F98E4 /* X+Methods.swift in Sources */,
-				FAA147C62D13BB1C009848C7 /* NavigationStackBootcamp.swift in Sources */,
-				FAC02CCF2C3CE86C0046D846 /* Destination.swift in Sources */,
-				FAA147B82D0C826E009848C7 /* ChatView.swift in Sources */,
-				FA1B0B002D05889300720EC4 /* RendererLessson2.swift in Sources */,
-				FAD6495C2C5E35A20025775F /* Matrix.swift in Sources */,
-				FAC02CC32C3CE7B40046D846 /* ContentView.swift in Sources */,
-				FAFF2C3B2C96F41E003EE3B3 /* SocketConnector.swift in Sources */,
-				FA07BF342CEAF9B1002F98E4 /* X+Post.swift in Sources */,
-				FAFF2C432C975DA6003EE3B3 /* ChatMessageModels.swift in Sources */,
-				FA07BF1A2CEACB5D002F98E4 /* X+String++.swift in Sources */,
-				FA1B0AF62D05857500720EC4 /* camera.swift in Sources */,
-				FA77D42D2C48F38E00F8220D /* SlipperCard.swift in Sources */,
-				FA07BF242CEAE7C1002F98E4 /* X+OAuthCredentials.swift in Sources */,
-				FA346CE72CFAFEF000300030 /* Shader.metal in Sources */,
-				FAFF2C2A2C96D386003EE3B3 /* ConnectionManager.swift in Sources */,
-				FA0651532C7C6EE2009F63F4 /* Renderer.swift in Sources */,
-				FAFF2C272C968935003EE3B3 /* ChatAppViewController.swift in Sources */,
-				FAFF2C362C96DB04003EE3B3 /* UIKitViewWrapper.swift in Sources */,
-				FAC02CC12C3CE7B40046D846 /* hundredprojectApp.swift in Sources */,
-				FA1B0AFC2D05883400720EC4 /* TriangleMesh.swift in Sources */,
-				FA07BF202CEAE743002F98E4 /* X.swift in Sources */,
-				FA7C07992C4E41E7004C7638 /* CombineViewPage.swift in Sources */,
-				FA1B0AFE2D05885E00720EC4 /* LinearAlgebro.swift in Sources */,
-				FA07BF262CEAE7F8002F98E4 /* X+Error.swift in Sources */,
-				FA1B0AFA2D05858C00720EC4 /* renderScence.swift in Sources */,
-				FA1B0AF22D05853200720EC4 /* MetalLesson2.swift in Sources */,
-				FAFF2C3D2C9716B1003EE3B3 /* UIKitChatSaveInfo.swift in Sources */,
-				FAA5FA032D1BE8A30032E033 /* HomeTabViewMain.swift in Sources */,
-				FA07BF182CEACB4E002F98E4 /* TwitterSignup.swift in Sources */,
-				FAFF2C232C968445003EE3B3 /* UIKitChatApp.swift in Sources */,
-				FAA147BE2D0F14F6009848C7 /* BubbleShape.swift in Sources */,
-				FA28C1BB2C68C105000464A1 /* FirebaseLog.swift in Sources */,
-				FA77D42B2C476FC700F8220D /* TransitionAndBlur.swift in Sources */,
-				FA0651512C7C69D4009F63F4 /* MetalLesson1.swift in Sources */,
-				FAA147C02D1134DE009848C7 /* LoadMoreView.swift in Sources */,
-				FAA147CC2D19670C009848C7 /* TabViewNavigate.swift in Sources */,
-				FAFF2C302C96D4FB003EE3B3 /* ChatDetailViewController.swift in Sources */,
-				FAA147C82D1503DB009848C7 /* Router.swift in Sources */,
-				FA07BF2C2CEAF2D3002F98E4 /* AsyncButton.swift in Sources */,
-				FA07BF222CEAE775002F98E4 /* X+OAuthHelper.swift in Sources */,
-				FA1B0AF82D05857E00720EC4 /* simpleComponent.swift in Sources */,
-				FAFF2C342C96D7A8003EE3B3 /* ChatDetailViewHost.swift in Sources */,
-				FAA147BA2D0C8282009848C7 /* MessageView.swift in Sources */,
-				FAD649592C5E31390025775F /* GameMainView.swift in Sources */,
-				FA07BF1C2CEACB8A002F98E4 /* X+Auth.swift in Sources */,
-				FA07BF282CEAEE59002F98E4 /* X+Route.swift in Sources */,
-				FA07BF322CEAF64B002F98E4 /* X+User.swift in Sources */,
-				FAD6495E2C5E35B90025775F /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -935,16 +556,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA28C1892C68B929000464A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
-		};
-		FA28C1B52C68BBE5000464A1 /* FirebaseStorageCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FA28C1892C68B929000464A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageCombine-Community";
-		};
-		FA28C1B72C68BBE6000464A1 /* FirebaseVertexAI-Preview */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FA28C1892C68B929000464A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseVertexAI-Preview";
 		};
 		FAFF2C382C96DFDF003EE3B3 /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
